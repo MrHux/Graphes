@@ -1,0 +1,6 @@
+NBSommets=0
+NBArcs=0
+Sommets=[
+]
+Arcs=[
+]
