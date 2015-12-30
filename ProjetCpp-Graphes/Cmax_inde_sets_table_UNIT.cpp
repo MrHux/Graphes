@@ -68,5 +68,14 @@ void Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set(){
 	assert(pMax_inde_sets_table->MITget_size_max() == 0);
 
 
+	//Cgraph * pGraph_alea = new Cgraph(10, 0, 16);
+
+	//pMax_inde_sets_table->GRTempty_table();
+
+	//pMax_inde_sets_table->MITenum_max_inde_set3(pGraph_alea, pIndependant_set);
+
+	//pMax_inde_sets_table->GRTprint();
+
+
 
 }

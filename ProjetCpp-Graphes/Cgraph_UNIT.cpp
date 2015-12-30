@@ -1,5 +1,8 @@
 #include "stdafx.h"
 
+#ifndef NDEBUG
+
+
 void Cgraph_UNIT::TEST_UNIT_Cgraph()
 {
 	printf("\n - UNIT_TEST constructor Cgraph :\n\n");
@@ -47,6 +50,8 @@ void Cgraph_UNIT::TEST_UNIT_Cgraph()
 	// ----------
 
 	Cgraph *graph5 = new Cgraph(INPUT_FILE1);
+
+	graph5->GRAprint();
 	assert(3 == graph5->GRAget_nb_vertex());
 
 	assert(1 == graph5->GRAget_vertex(0)->VERget_id_vertex());
@@ -66,6 +71,18 @@ void Cgraph_UNIT::TEST_UNIT_Cgraph()
 	assert(1 == graph5->GRAget_vertex(2)->VERget_list_edges_out()[0]->EDGget_id_vertex_in());
 
 	delete graph5;
+
+	printf("Test : random graph \n");
+
+	Cgraph * pGraph6 = new Cgraph(10, 1, 10);
+
+	pGraph6->GRAprint();
+
+	assert(pGraph6->GRAget_nb_vertex() == 10);
+	printf("%d",pGraph6->GRAget_nb_edges());
+	assert(pGraph6->GRAget_nb_edges() == 10);
+
+	delete pGraph6;
 }
 
 void Cgraph_UNIT::TEST_UNIT_GRAinvert_all_edges()
@@ -108,3 +125,39 @@ void Cgraph_UNIT::TEST_UNIT_GRAorder_by_degree(){
 
 	pGraph->GRAprint();
 }
+
+
+static void TEST_UNIT_GRAdelete_vertex_pointed_by(){
+	printf(" - TEST_UNIT_GRAdelete_vertex_pointed_by() :\n");
+	printf("\n before :\n\n");
+
+	printf("\n after :\n\n");
+}
+
+static void TEST_UNIT_GRAdelete_vertex_who_point(){
+	printf(" - TEST_UNIT_GRAorder_by_degree() :\n");
+	printf("\n before :\n\n");
+
+	printf("\n after :\n\n");
+}
+
+static void TEST_UNIT_GRAis_graph_only_compose_of_comunity(){
+	printf(" - TEST_UNIT_GRAis_graph_only_compose_of_comunity() :\n");
+	printf("\n before :\n\n");
+
+	printf("\n after :\n\n");
+}
+
+static void TEST_UNIT_GRAcount_nb_edge_of_successor(){
+	printf(" - TEST_UNIT_GRAcount_nb_edge_of_successor() :\n");
+	printf("\n before :\n\n");
+
+	printf("\n after :\n\n");
+}
+
+static void TEST_UNIT_GRAget_max_nb_edge_of_successor(){
+	printf(" - TEST_UNIT_GRAget_max_nb_edge_of_successor() :\n");
+	printf("\n before :\n\n");
+	printf("\n after :\n\n");
+}
+#endif

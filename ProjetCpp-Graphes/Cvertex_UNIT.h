@@ -1,10 +1,19 @@
+/**
+* @file Cvertex_UNIT.h
+*
+* \author Mathieu Boutolleau & Paul Fayoux
+*
+*
+*/
+
 #pragma once
 #ifndef NDEBUG
 #include "stdafx.h"
 #ifndef PROJETCPP2_CVERTEX_UNIT_H
 #define PROJETCPP2_CVERTEX_UNIT_H
 
-class CVertex_UNIT
+//! Cvertex_UNIT Class
+class Cvertex_UNIT
 {
 public:
 	

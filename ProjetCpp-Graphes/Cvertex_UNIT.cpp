@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
-void CVertex_UNIT::TEST_UNIT_Cvertex(){
+#ifndef NDEBUG
+void Cvertex_UNIT::TEST_UNIT_Cvertex(){
 	printf("\n - UNIT_TEST constructor Cvertex :\n\n");
 	printf("Test : null pointer in the copy constructor :\n");
 
@@ -35,7 +36,7 @@ void CVertex_UNIT::TEST_UNIT_Cvertex(){
 
 }
 
-void CVertex_UNIT::TEST_UNIT_VERset_list_edges_out(){
+void Cvertex_UNIT::TEST_UNIT_VERset_list_edges_out(){
 	printf("\n - UNIT_TEST VERset_list_edges_out() :\n\n");
 	printf("Test : null param :\n");
 
@@ -71,9 +72,45 @@ void CVertex_UNIT::TEST_UNIT_VERset_list_edges_out(){
 
 	assert(testExceptionIsThrowed == true);
 
+	printf("Test : initial list not null, list to set not null :\n");
+
+	delete(vertex);
+	vertex = new Cvertex();
+
+	ppTabEdge = new Cedges*[3];
+	ppTabEdge[0] = new Cedges(1);
+	ppTabEdge[1] = new Cedges(2);
+	ppTabEdge[2] = new Cedges(3);
+
+	vertex->VERset_list_edges_out(ppTabEdge, 3);
+
+	//just verify if the vertex is correctly set
+	assert(vertex->VERget_nb_edges_out() == 3);
+
+	delete(ppTabEdge[0]);
+	delete(ppTabEdge[1]);
+	delete(ppTabEdge[2]);
+	delete[](ppTabEdge);
+
+	ppTabEdge = new Cedges*[4];
+	ppTabEdge[0] = new Cedges(1);
+	ppTabEdge[1] = new Cedges(2);
+	ppTabEdge[2] = new Cedges(3);
+	ppTabEdge[3] = new Cedges(4);
+
+	vertex->VERset_list_edges_out(ppTabEdge, 4);
+	//test if the remplacement of the list worked well
+	assert(vertex->VERget_nb_edges_out() == 4);
+	
+	delete(ppTabEdge[0]);
+	delete(ppTabEdge[1]);
+	delete(ppTabEdge[2]);
+	delete(ppTabEdge[3]);
+
+	delete[](ppTabEdge);
 }
 
-void CVertex_UNIT::TEST_UNIT_VERset_list_edges_in(){
+void Cvertex_UNIT::TEST_UNIT_VERset_list_edges_in(){
 	printf("\n - UNIT_TEST VERset_list_edges_in() :\n\n");
 	printf("Test : null param :\n");
 
@@ -88,6 +125,8 @@ void CVertex_UNIT::TEST_UNIT_VERset_list_edges_in(){
 	ppTabEdge[0] = new Cedges(1);
 	ppTabEdge[1] = new Cedges(2);
 	ppTabEdge[2] = new Cedges(3);
+
+
 
 	vertex->VERset_list_edges_in(ppTabEdge, 3);
 
@@ -106,11 +145,18 @@ void CVertex_UNIT::TEST_UNIT_VERset_list_edges_in(){
 	catch (Cexception exc){
 		testExceptionIsThrowed = true;
 	}
+	delete(ppTabEdge[1]);
 
 	assert(testExceptionIsThrowed == true);
+
+	delete(ppTabEdge[0]);
+	delete(ppTabEdge[2]);
+
+
+	delete[](ppTabEdge);
 }
 
-void CVertex_UNIT::TEST_UNIT_VERoperatorEqual(){
+void Cvertex_UNIT::TEST_UNIT_VERoperatorEqual(){
 	printf("\n - UNIT_TEST VERoperatorEqual() :\n\n");
 	printf("Test : null pointer :\n");
 
@@ -136,7 +182,7 @@ void CVertex_UNIT::TEST_UNIT_VERoperatorEqual(){
 	assert(*vertex == vertex2);
 }
 
-void CVertex_UNIT::TEST_UNIT_VERoperatorEqualEqual(){
+void Cvertex_UNIT::TEST_UNIT_VERoperatorEqualEqual(){
 	printf("\n - UNIT_TEST VERoperatorEqualEqual() :\n\n");
 	printf("Test : NULL pointers in param :\n");
 
@@ -170,7 +216,7 @@ void CVertex_UNIT::TEST_UNIT_VERoperatorEqualEqual(){
 	assert(!(*vertex == *vertex2));
 }
 
-void CVertex_UNIT::TEST_UNIT_VERoperatorNotEqual(){
+void Cvertex_UNIT::TEST_UNIT_VERoperatorNotEqual(){
 	printf("\n - UNIT_TEST VERoperatorEqualEqual() :\n\n");
 	printf("Test : NULL pointers in param :\n");
 
@@ -203,3 +249,4 @@ void CVertex_UNIT::TEST_UNIT_VERoperatorNotEqual(){
 
 	assert(*vertex != *vertex2);
 }
+#endif

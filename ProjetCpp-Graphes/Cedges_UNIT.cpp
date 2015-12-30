@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#ifndef NDEBUG
 void Cedges_UNIT::TEST_UNIT_Cedges(){
 	printf("\n - UNIT_TEST constructor Cedges :\n\n");
 	printf("Test : null pointer in the copy constructor :\n");
@@ -92,3 +93,5 @@ void Cedges_UNIT::TEST_UNIT_OperatorNotEqual(){
 
 	assert(*edge != *edge2);
 }
+
+#endif

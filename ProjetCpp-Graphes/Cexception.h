@@ -1,6 +1,15 @@
+/**
+* @file Cexception.h
+*
+* \author Mathieu Boutolleau & Paul Fayoux
+*
+*
+*/
+
 #pragma once
 #include "stdafx.h"
 
+//! Cexception Class
 class Cexception
 {
 private:

@@ -1,16 +1,17 @@
 #include "stdafx.h"
 
 /***
-* Cedges() - create a new Cedges with null value
+*
+*Cedges() - create a new Cedges with null value
 *
 *Purpose:
 *       create a new Cedges with null value
 *
-*Entry:
+*Entry :
 *       none
 *
 *Return:
-*		nothing
+*		 nothing
 *
 *******************************************************************************/
 Cedges::Cedges()
@@ -24,7 +25,7 @@ Cedges::Cedges()
 *Purpose:
 *       create a new Cedges with the value of another edge
 *
-*Entry:
+*@param
 *       const Cedges &	edgeToCopy	-	the edges to copy
 *
 *Return:
@@ -47,7 +48,7 @@ Cedges::Cedges(const Cedges &edgeToCopy)
 *Purpose:
 *       create a new Cedges with the param
 *
-*Entry:
+*@param
 *       unsigned int	uiId_vertex_out	-	the id of the vertex
 *
 *Return:
@@ -65,7 +66,7 @@ Cedges::Cedges(unsigned int uiId_vertex_in)
 *Purpose:
 *       delete correctly a Cedges
 *
-*Entry:
+*@param
 *       const Cedges &	edgeToCopy	-	the edges to copy
 *
 *Return:
@@ -83,7 +84,7 @@ Cedges::~Cedges()
 *Purpose:
 *       set the id of the vertex of the Cedges
 *
-*Entry:
+*@param
 *       unsigned int	uiId_vertex_in	-	the id to set
 *
 *Return:
@@ -101,7 +102,7 @@ void Cedges::EDGset_id_vertex_in(unsigned int uiId_vertex_in)
 *Purpose:
 *       get the id of the vertex of the Cedges
 *
-*Entry:
+*@param
 *       none
 *
 *Return:
@@ -119,7 +120,7 @@ unsigned int Cedges::EDGget_id_vertex_in()
 *Purpose:
 *       set the id of the vertex of the Cedges
 *
-*Entry:
+*@param
 *       const Cedges &	edgeToCopy	-	the edge to copy
 *
 *Return:
@@ -142,7 +143,7 @@ Cedges &Cedges::operator=(const Cedges &edgeToCopy){
 *Purpose:
 *       compare two Cedges
 *
-*Entry:
+*@param
 *       Cedges &	edgeToCompare	-	the edge to compare
 *
 *Return:
@@ -167,7 +168,7 @@ bool Cedges::operator==(Cedges &edgeToCompare){
 *Purpose:
 *       compare two Cedges
 *
-*Entry:
+*@param
 *       Cedges &	edgeToCompare	-	the edge to compare
 *
 *Return:

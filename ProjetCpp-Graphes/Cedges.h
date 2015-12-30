@@ -1,8 +1,17 @@
+/**
+* @file Cedges.h
+*
+* \author Mathieu Boutolleau & Paul Fayoux
+*
+*
+*/
+
 #pragma once
 #ifndef PROJETCPP2_CEDGES_H
 #define PROJETCPP2_CEDGES_H
 #include "stdafx.h"
 
+ //! Cedges Class
 class Cedges
 {
 private:
@@ -11,136 +20,139 @@ private:
 
 public:
 
-	/***
-	* Cedges() - create a new Cedges with null value
+	/*!
+	* 
+	* \brief Cedges() - create a new Cedges with null value
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       create a new Cedges with null value
 	*
-	*Entry:
+	*@param
 	*       none
 	*
-	*Return:
-	*		nothing
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	Cedges();
 
-	/***
+	/*!
 	* Cedges(const Cedges &edgeToCopy) - create a new Cedges with the value of another edge
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       create a new Cedges with the value of another edge
 	*
-	*Entry:
+	*@param
 	*       const Cedges &	edgeToCopy	-	the edges to copy
 	*
-	*Return:
-	*		nothing
+	*
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	Cedges(const Cedges &edgeToCopy);
 
-	/***
+	/*!
 	* Cedges(unsigned int uiId_vertex_in) - create a new Cedges with the param
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       create a new Cedges with the param
 	*
-	*Entry:
+	*@param
 	*       unsigned int	uiId_vertex_in	-	the id of the vertex
 	*
-	*Return:
-	*		nothing
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	Cedges(unsigned int uiId_vertex_in);
 
-	/***
+	/*!
 	* ~Cedges() - delete correctly a Cedges
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       delete correctly a Cedges
 	*
-	*Entry:
+	*@param
 	*       const Cedges &	edgeToCopy	-	the edges to copy
 	*
-	*Return:
-	*		nothing
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	~Cedges();
 
-	/***
+	/*!
 	* EDGset_id_vertex_in(unsigned int uiId_vertex_in) - set the id of the vertex of the Cedges
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       set the id of the vertex of the Cedges
 	*
-	*Entry:
+	*@param
 	*       unsigned int	uiId_vertex_in	the id to set
 	*
-	*Return:
-	*		nothing
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	void EDGset_id_vertex_in(unsigned int uiId_vertex_in);
 
-	/***
+	/*!
 	* EDGget_id_vertex_in(unsigned int uiId_vertex_in) - get the id of the vertex of the Cedges
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       get the id of the vertex of the Cedges
 	*
-	*Entry:
+	*@param
 	*       none
 	*
-	*Return:
+	*@return
 	*		unsigned int	-	the id of the vertex of the Cedges
 	*
 	*******************************************************************************/
 	unsigned int EDGget_id_vertex_in();
 
-	/***
+	/*!
 	* Cedges &Cedges::operator=(const Cedges &edgeToCopy) - set the id of the vertex of the Cedges
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       set the id of the vertex of the Cedges
 	*
-	*Entry:
+	*@param
 	*       const Cedges &	edgeToCopy	-	the edge to copy
 	*
-	*Return:
-	*		nothing
+	*@return
+	*		none
 	*
 	*******************************************************************************/
 	Cedges &operator=(const Cedges &edgeToCopy);
 
-	/***
+	/*!
 	* operator==(Cedges &edgeToCompare) - compare two Cedges
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       compare two Cedges
 	*
-	*Entry:
+	*@param
 	*       Cedges &	edgeToCompare	-	the edge to compare
 	*
-	*Return:
+	*@return
 	*		bool	-	true if the two Cedges are equal, false otherwise
 	*
 	*******************************************************************************/
 	bool operator==(Cedges &edgeToCompare);
 
-	/***
-	* operator==(Cedges &edgeToCompare) - compare two Cedges
+
+	/*!
+	* bool operator!=(Cedges &edgeToCompare);
 	*
-	*Purpose:
+	*\brief Purpose:
 	*       compare two Cedges
 	*
-	*Entry:
+	*@param
 	*       Cedges &	edgeToCompare	-	the edge to compare
 	*
-	*Return:
+	*@return
 	*		bool	-	false if the two Cedges are equal, true otherwise
 	*
 	*******************************************************************************/

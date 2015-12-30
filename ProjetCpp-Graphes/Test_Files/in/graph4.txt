@@ -1,5 +1,5 @@
 NBSommets=12
-NBArcs=31
+NBArcs=16
 Sommets=[
 Numero=1
 Numero=2
@@ -17,33 +17,18 @@ Numero=12
 Arcs=[
 Debut=1, Fin=2
 Debut=1, Fin=3
-Debut=2, Fin=1
 Debut=2, Fin=3
 Debut=2, Fin=5
-Debut=3, Fin=1
-Debut=3, Fin=2
 Debut=3, Fin=4
 Debut=3, Fin=5
-Debut=4, Fin=3
 Debut=4, Fin=5
-Debut=5, Fin=2
-Debut=5, Fin=3
-Debut=5, Fin=4
 Debut=5, Fin=6
 Debut=5, Fin=8
 Debut=5, Fin=10
-Debut=6, Fin=5
 Debut=6, Fin=7
 Debut=6, Fin=9
-Debut=7, Fin=6
 Debut=7, Fin=9
 Debut=7, Fin=10
-Debut=8, Fin=5
 Debut=8, Fin=10
-Debut=9, Fin=6
-Debut=9, Fin=7
-Debut=10, Fin=5
-Debut=10, Fin=7
-Debut=10, Fin=8
 Debut=12, Fin=2
 ]

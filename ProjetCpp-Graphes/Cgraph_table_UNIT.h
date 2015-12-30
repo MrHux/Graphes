@@ -1,6 +1,15 @@
+/**
+* @file Cgraph_table_UNIT.h
+*
+* \author Mathieu Paul Fayoux
+*
+*
+*/
+
 #pragma once
 #include "stdafx.h"
 
+//! Cgraph_table_UNIT Class
 class Cgraph_table_UNIT
 {
 public:

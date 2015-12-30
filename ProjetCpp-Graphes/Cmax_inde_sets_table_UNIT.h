@@ -1,5 +1,15 @@
+/**
+* @file Cmax_inde_sets_table_UNIT.h
+*
+* \author Paul Fayoux
+*
+*
+*/
+
 #pragma once
 #include "stdafx.h"
+
+//! Cmax_inde_sets_table_UNIT Class
 class Cmax_inde_sets_table_UNIT
 {
 public:
