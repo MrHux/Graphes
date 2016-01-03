@@ -36,7 +36,7 @@ char ** Cfile::FILparse_file(const char* pcFile_to_parse) throw (Cexception) {
         while (streamOfFileToParse.getline(pcBuffer, BUFFER_SIZE)) {
             uiNumber_values_per_line = 0; // For each line read, we reset the counter of values read per line
 
-            pcValue = strtok_s(pcBuffer, CHARS_DELIMS_TOKENS, &pcNext_value); // Trying to retrieve a token into pcValue
+            pcValue = strtok(pcBuffer, CHARS_DELIMS_TOKENS); // Trying to retrieve a token into pcValue
 
             // If a token has been retrieved
             while (pcValue != NULL) {
@@ -68,11 +68,11 @@ char ** Cfile::FILparse_file(const char* pcFile_to_parse) throw (Cexception) {
 
                 // Copy in ppFile_values[uiIndexfile_values] (wich is strlen(pcValue) + 1 characters long) the cstring pcValue, 
                 // if pcValue is bigger than ppFile_values[uiIndexfile_values], truncate pcValue to fit
-				strncpy_s(ppFile_values[uiIndexfile_values], strlen(pcValue) + 1, pcValue, _TRUNCATE);
+                char* dest = strncpy(ppFile_values[uiIndexfile_values], pcValue, strlen(pcValue) + 1);
 
                 uiIndexfile_values++;
 
-				pcValue = strtok_s(NULL, CHARS_DELIMS_TOKENS, &pcNext_value);
+                pcValue = strtok(NULL, CHARS_DELIMS_TOKENS);
             }
         }
 

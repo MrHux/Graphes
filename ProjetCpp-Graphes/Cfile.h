@@ -11,9 +11,9 @@
 #define ERROR_CHANGING_SIZE_TABLE_VALUES 11
 
 // Path of test's files
-#define INPUT_FILE1 ".\\Test_Files\\in\\graph1.txt"
-#define INPUT_FILE2 ".\\Test_Files\\in\\graph2.txt"
-#define INPUT_FILE3 ".\\Test_Files\\in\\graph3.txt"
+#define INPUT_FILE1 "/home/paul/NetBeansProjects/Projet DI4/ProjetCPP_stable_linux/Test_Files/in/graph1.txt"
+#define INPUT_FILE2 "/home/paul/NetBeansProjects/Projet DI4/ProjetCPP_stable_linux/Test_Files/in/graph2.txt"
+#define INPUT_FILE3 "/home/paul/NetBeansProjects/Projet DI4/ProjetCPP_stable_linux/Test_Files/in/graph3.txt"
 
 // Important characters in the input files
 #define CHARS_DELIMS_TOKENS "=, "

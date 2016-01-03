@@ -156,7 +156,7 @@ public:
 	*\throws	Throw an exception if index is outofbound
 	*
 	*******************************************************************************/
-	Cgraph * GRT_delete_graph_at_index(unsigned int uiIndex);
+	void GRT_delete_graph_at_index(unsigned int uiIndex);
 
 	/*!
 	* void Cgraph_table::GRT_insert_graph_at_index(unsigned int uiIndex, Cgraph * pCgraph_to_add) - insert a graph at the position in parameter

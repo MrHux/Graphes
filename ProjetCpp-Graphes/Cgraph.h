@@ -264,7 +264,7 @@ public:
 	*		Throw an exception if the index is out of the range of number of edge in the graph
 	*
 	*******************************************************************************/
-	Cvertex* GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex);
+	void GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex);
 
 	/*!
 	*GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex) - remove a vertex of the graph

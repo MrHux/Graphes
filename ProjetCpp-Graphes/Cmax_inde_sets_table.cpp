@@ -129,7 +129,7 @@ void Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndep
             Cvertex * pVertex = pGraph_copy->GRAget_vertex(uiIndex_vertex); // get the vertex at index
             unsigned int uiVertex_id = pVertex->VERget_id_vertex(); //get the id of the vertex
             
-            pCopy_independant_sets->GRAadd_vertex(new Cvertex(*pVertex)); //add a copy of the vertex to the independant set
+            pCopy_independant_sets->GRAadd_vertex(pVertex); //add a copy of the vertex to the independant set
             //remove all vertex who has a shared edge
             
             

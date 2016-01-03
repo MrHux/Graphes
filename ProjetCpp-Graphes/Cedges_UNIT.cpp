@@ -1,97 +1,110 @@
 #include "stdafx.h"
 
 #ifndef NDEBUG
-void Cedges_UNIT::TEST_UNIT_Cedges(){
-	printf("\n - UNIT_TEST constructor Cedges :\n\n");
-	printf("Test : null pointer in the copy constructor :\n");
 
-	Cedges * edge = NULL;
-	Cedges * edge2 = new Cedges(*edge);
-	edge = new Cedges();
+void Cedges_UNIT::TEST_UNIT_Cedges() {
+    printf("\n - UNIT_TEST constructor Cedges :\n\n");
+    printf("Test : null pointer in the copy constructor :\n");
 
-	assert(*edge == *edge2);
+    Cedges * edge = NULL;
+    Cedges * edge2 = new Cedges(*edge);
+    edge = new Cedges();
 
-	delete edge2;
+    assert(*edge == *edge2);
 
-	printf("Test : an non null value in the copy constructor :\n");
+    delete edge2;
 
-	edge->EDGset_id_vertex_in(3);
-	edge2 = new Cedges(*edge);
+    printf("Test : an non null value in the copy constructor :\n");
 
-	assert(*edge == *edge2);
+    edge->EDGset_id_vertex_in(3);
+    edge2 = new Cedges(*edge);
 
-	delete edge;
-	printf("Test : value in constructor with param :\n");
+    assert(*edge == *edge2);
 
-	edge = new Cedges(3);
-	edge2->EDGset_id_vertex_in(3);
+    delete edge;
+    printf("Test : value in constructor with param :\n");
 
-	assert(*edge == *edge2);
+    edge = new Cedges(3);
+    edge2->EDGset_id_vertex_in(3);
+
+    assert(*edge == *edge2);
+    
+    delete edge;
+    delete edge2;
+
 }
 
-void Cedges_UNIT::TEST_UNIT_OperatorEqual(){
-	printf("\n - UNIT_TEST Operator= Cedges :\n\n");
-	printf("Test : null pointer :\n");
+void Cedges_UNIT::TEST_UNIT_OperatorEqual() {
+    printf("\n - UNIT_TEST Operator= Cedges :\n\n");
+    printf("Test : null pointer :\n");
 
-	Cedges * edge = NULL;
-	Cedges edge2 = *edge;
-	edge = new Cedges();
+    Cedges * edge = NULL;
+    Cedges edge2 = *edge;
+    edge = new Cedges();
 
-	assert(*edge == edge2);
+    assert(*edge == edge2);
 
-	printf("Test : integer in param :\n");
+    printf("Test : integer in param :\n");
 
-	edge->EDGset_id_vertex_in(3);
-	edge2.EDGset_id_vertex_in(3);
+    edge->EDGset_id_vertex_in(3);
+    edge2.EDGset_id_vertex_in(3);
 
-	assert(*edge == edge2);
+    assert(*edge == edge2);
+    
+    delete edge;
 }
 
-void Cedges_UNIT::TEST_UNIT_OperatorEqualEqual(){
-	printf("\n - UNIT_TEST Operator== Cedges :\n\n");
-	printf("Test : NULL pointers in param :\n");
+void Cedges_UNIT::TEST_UNIT_OperatorEqualEqual() {
+    printf("\n - UNIT_TEST Operator== Cedges :\n\n");
+    printf("Test : NULL pointers in param :\n");
 
-	Cedges * edge = NULL;
-	Cedges * edge2 = NULL;
-	
-	assert(*edge == *edge2);
+    Cedges * edge = NULL;
+    Cedges * edge2 = NULL;
 
-	printf("Test : two equal Cedges :\n");
+    assert(*edge == *edge2);
 
-	edge = new Cedges(3);
-	edge2 = new Cedges(3);
+    printf("Test : two equal Cedges :\n");
 
-	assert(*edge == *edge2);
-	
-	printf("Test : different Cedges :\n");
+    edge = new Cedges(3);
+    edge2 = new Cedges(3);
 
-	edge2->EDGset_id_vertex_in(4);
+    assert(*edge == *edge2);
 
-	assert(!(*edge == *edge2));
+    printf("Test : different Cedges :\n");
+
+    edge2->EDGset_id_vertex_in(4);
+
+    assert(!(*edge == *edge2));
+    
+    delete edge;
+    delete edge2;
 }
 
-void Cedges_UNIT::TEST_UNIT_OperatorNotEqual(){
-	printf("\n - UNIT_TEST Operator!= Cedges :\n\n");
-	printf("Test : NULL pointers in param :\n");
+void Cedges_UNIT::TEST_UNIT_OperatorNotEqual() {
+    printf("\n - UNIT_TEST Operator!= Cedges :\n\n");
+    printf("Test : NULL pointers in param :\n");
 
-	Cedges * edge = NULL;
-	Cedges * edge2 = NULL;
+    Cedges * edge = NULL;
+    Cedges * edge2 = NULL;
 
-	assert(!(*edge != *edge2));
+    assert(!(*edge != *edge2));
 
-	printf("Test : two equal Cedges :\n");
+    printf("Test : two equal Cedges :\n");
 
-	edge = new Cedges(3);
-	edge2 = new Cedges(3);
+    edge = new Cedges(3);
+    edge2 = new Cedges(3);
 
-	assert(!(*edge != *edge2));
+    assert(!(*edge != *edge2));
 
-	printf("Test : different Cedges :\n");
+    printf("Test : different Cedges :\n");
 
-	edge->EDGset_id_vertex_in(3);
-	edge2->EDGset_id_vertex_in(4);
+    edge->EDGset_id_vertex_in(3);
+    edge2->EDGset_id_vertex_in(4);
 
-	assert(*edge != *edge2);
+    assert(*edge != *edge2);
+    
+    delete edge;
+    delete edge2;
 }
 
 #endif

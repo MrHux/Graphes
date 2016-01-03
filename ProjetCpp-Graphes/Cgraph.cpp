@@ -46,9 +46,12 @@ Cgraph::Cgraph(Cvertex** ppList_vertex, unsigned int uiNb_vertex) {
         throw exc;
     } else {
         uiGRAnb_vertex = uiNb_vertex;
-        ppGRAlist_vertex = new Cvertex*[uiGRAnb_vertex];
-        for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
-            ppGRAlist_vertex[indexOfVertex] = new Cvertex(*ppList_vertex[indexOfVertex]);
+        ppGRAlist_vertex = NULL;
+        if (ppList_vertex != NULL) {
+            ppGRAlist_vertex = new Cvertex*[uiGRAnb_vertex];
+            for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
+                ppGRAlist_vertex[indexOfVertex] = new Cvertex(*ppList_vertex[indexOfVertex]);
+            }
         }
     }
 }
@@ -141,6 +144,8 @@ Cgraph::Cgraph(const char * pcFile_to_import) throw (Cexception) {
                 // Add the new vertex to the graph
                 GRAadd_vertex(vertex_read); // CRASH when calling GRAget_index_vertex : ppGRAlist_vertex[indexOfVertex (0)] is not defined.
 
+                delete vertex_read;
+                
                 uiNumber_vertices_read++;
             } else {
                 // Error : unexpected value
@@ -195,8 +200,8 @@ Cgraph::Cgraph(const char * pcFile_to_import) throw (Cexception) {
 Cgraph::Cgraph(const Cgraph &graph_to_copy) {
     if (&graph_to_copy != NULL) {
         uiGRAnb_vertex = graph_to_copy.uiGRAnb_vertex;
-        
-        ppGRAlist_vertex=NULL;
+
+        ppGRAlist_vertex = NULL;
         if (uiGRAnb_vertex != 0) {
             ppGRAlist_vertex = new Cvertex*[uiGRAnb_vertex];
             for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
@@ -226,46 +231,49 @@ Cgraph::Cgraph(const Cgraph &graph_to_copy) {
  *******************************************************************************/
 Cgraph::Cgraph(unsigned int uiNb_vertex, bool bIs_oriented, unsigned int iNb_edges) {
 
-
-    uiGRAnb_vertex = 0;
-    if (uiNb_vertex != 0) {
-
-        ppGRAlist_vertex = new Cvertex*[uiNb_vertex];
-        for (unsigned int uiIndex_vertex = 0; uiIndex_vertex < uiNb_vertex; uiIndex_vertex++) {
-            GRAadd_vertex(new Cvertex(uiIndex_vertex, NULL, NULL, 0, 0));
-        }
-        uiGRAnb_vertex = uiNb_vertex; //set the new number of vertex
-
-        unsigned int uiNb_edges_to_distrib = iNb_edges;
-
-        if (uiNb_edges_to_distrib != 0) {//if number of edge to set is 0 do nothing
-
-            srand((unsigned int) time(0));
-
-            for (unsigned int indexOfVertex1 = 0; indexOfVertex1 < GRAget_nb_vertex(); indexOfVertex1++) {
-                if (uiNb_edges_to_distrib > 0) {
-
-                    unsigned int uiRandom_nb_edges = (rand() % (uiNb_edges_to_distrib));
-                    if (uiNb_edges_to_distrib == 1) uiRandom_nb_edges = 1;
-                    uiNb_edges_to_distrib = uiNb_edges_to_distrib - uiRandom_nb_edges;
-
-
-                    for (unsigned int indexOfEdges = 0; indexOfEdges < uiRandom_nb_edges; indexOfEdges++) {
-                        unsigned int indexOfVertex2 = indexOfVertex1;
-                        while (indexOfVertex2 == indexOfVertex1) {
-                            indexOfVertex2 = rand() % (GRAget_nb_vertex()); //index begin by 0
-                        }
-                        if (GRAadd_edge_from_index(indexOfVertex1, indexOfVertex2)) {//link every vertex with all other vertex
-                            indexOfEdges--; // if the edge was already existing we increment the count (to have the wanted amount of edge) 
-                        }
-                    }
-                }
-            }
-        }
-
-    } else {
-        ppGRAlist_vertex = NULL;
-    }
+    printf("Warning this function is not implemented yet ! Do not use it !");
+    abort();
+//    uiGRAnb_vertex = 0;
+//    if (uiNb_vertex != 0) {
+//
+//        ppGRAlist_vertex = new Cvertex*[uiNb_vertex];
+//        for (unsigned int uiIndex_vertex = 0; uiIndex_vertex < uiNb_vertex; uiIndex_vertex++) {
+//            Cvertex * pNew_vertex = new Cvertex(uiIndex_vertex, NULL, NULL, 0, 0);
+//            GRAadd_vertex(pNew_vertex);
+//            delete pNew_vertex;
+//        }
+//        uiGRAnb_vertex = uiNb_vertex; //set the new number of vertex
+//
+//        unsigned int uiNb_edges_to_distrib = iNb_edges;
+//
+//        if (uiNb_edges_to_distrib != 0) {//if number of edge to set is 0 do nothing
+//
+//            srand((unsigned int) time(0));
+//
+//            for (unsigned int indexOfVertex1 = 0; indexOfVertex1 < GRAget_nb_vertex(); indexOfVertex1++) {
+//                if (uiNb_edges_to_distrib > 0) {
+//
+//                    unsigned int uiRandom_nb_edges = (rand() % (uiNb_edges_to_distrib));
+//                    if (uiNb_edges_to_distrib == 1) uiRandom_nb_edges = 1;
+//                    uiNb_edges_to_distrib = uiNb_edges_to_distrib - uiRandom_nb_edges;
+//
+//
+//                    for (unsigned int indexOfEdges = 0; indexOfEdges < uiRandom_nb_edges; indexOfEdges++) {
+//                        unsigned int indexOfVertex2 = indexOfVertex1;
+//                        while (indexOfVertex2 == indexOfVertex1) {
+//                            indexOfVertex2 = rand() % (GRAget_nb_vertex()); //index begin by 0
+//                        }
+//                        if (GRAadd_edge_from_index(indexOfVertex1, indexOfVertex2)) {//link every vertex with all other vertex
+//                            indexOfEdges--; // if the edge was already existing we increment the count (to have the wanted amount of edge) 
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//
+//    } else {
+//        ppGRAlist_vertex = NULL;
+//    }
 
 }
 
@@ -453,7 +461,7 @@ unsigned int Cgraph::GRAadd_vertex(Cvertex* pVertex) {
         for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
             ppListVertexConcat[indexOfVertex] = new Cvertex(*ppGRAlist_vertex[indexOfVertex]);
         }
-        ppListVertexConcat[uiGRAnb_vertex] = pVertex; //add new vertex
+        ppListVertexConcat[uiGRAnb_vertex] = new Cvertex(*pVertex); //add new vertex
 
         if (ppGRAlist_vertex != NULL && uiGRAnb_vertex != 0) {
             for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
@@ -487,7 +495,6 @@ void Cgraph::GRAremove_vertex_from_index(unsigned int uiIndex_vertex) throw (Cex
         Cexception exc(ERROR_INDEX_OUT_OF_BOUND);
         throw exc;
     } else {
-        Cvertex * pOldVertexToDelete = NULL;
         Cvertex ** ppListVertexConcat = NULL;
 
         //remove all the edge who exist with the removed vertex
@@ -499,7 +506,6 @@ void Cgraph::GRAremove_vertex_from_index(unsigned int uiIndex_vertex) throw (Cex
         //delete the vertex
         if (uiGRAnb_vertex >= 2) {
 
-            pOldVertexToDelete = ppGRAlist_vertex[uiIndex_vertex];
             ppListVertexConcat = new Cvertex*[uiGRAnb_vertex - 1];
 
             for (unsigned int indexOfVertex = 0; indexOfVertex < uiIndex_vertex; indexOfVertex++) {
@@ -514,7 +520,7 @@ void Cgraph::GRAremove_vertex_from_index(unsigned int uiIndex_vertex) throw (Cex
         //delete old list
         for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
             delete ppGRAlist_vertex[indexOfVertex];
-            ppGRAlist_vertex[indexOfVertex]=NULL;
+            ppGRAlist_vertex[indexOfVertex] = NULL;
         }
         delete[] ppGRAlist_vertex;
 
@@ -541,7 +547,7 @@ void Cgraph::GRAremove_vertex_from_index(unsigned int uiIndex_vertex) throw (Cex
  *		Throw an exception if the index is out of the range of number of edge in the graph
  *
  *******************************************************************************/
-Cvertex* Cgraph::GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex) {
+void Cgraph::GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex) {
     GRAremove_vertex_from_index(GRAget_index_vertex(uiId_vertex));
 }
 
@@ -698,13 +704,16 @@ void Cgraph::GRAremove_edge_from_index(unsigned int uiIndex_vertex_out, unsigned
         Cexception exc(ERROR_INDEX_OUT_OF_BOUND);
         throw exc;
     } else {
+        Cedges * pEdge_removed = NULL;
         //delete the edge who's going out of the vertex of index "uiIndex_vertex_out" , this edge contain vertex of index "uiIndex_vertex_in"
-        if (ppGRAlist_vertex[uiIndex_vertex_out]->VERremove_edge_from_list_edges_out(ppGRAlist_vertex[uiIndex_vertex_in]->VERget_id_vertex()) == NULL) {
-            //printf("WARNING ! the edge was not removed of list_edge_out of vertex uiIndex_vertex_in , maybe it was already removed ! ");
+        pEdge_removed = ppGRAlist_vertex[uiIndex_vertex_out]->VERremove_edge_from_list_edges_out(ppGRAlist_vertex[uiIndex_vertex_in]->VERget_id_vertex());
+        if (pEdge_removed != NULL) {
+            delete pEdge_removed; //the edge is correctly removed
         }
         //delete the edge who's going in of the vertex of index "uiIndex_vertex_in" , this edge contain vertex of index "uiIndex_vertex_out"
-        if (ppGRAlist_vertex[uiIndex_vertex_in]->VERremove_edge_from_list_edges_in(ppGRAlist_vertex[uiIndex_vertex_out]->VERget_id_vertex()) == NULL) {
-            //printf("WARNING ! the edge was not removed of list_edge_in of vertex uiIndex_vertex_out , maybe it was already removed ! ");
+        pEdge_removed = ppGRAlist_vertex[uiIndex_vertex_in]->VERremove_edge_from_list_edges_in(ppGRAlist_vertex[uiIndex_vertex_out]->VERget_id_vertex());
+        if (pEdge_removed != NULL) {
+            delete pEdge_removed; //the edge is correctly removed
         }
     }
 }
@@ -764,7 +773,10 @@ bool Cgraph::GRAadd_edge_from_index(unsigned int uiIndex_vertex_out, unsigned in
         unsigned int uiIndex_edge_inserted_out = ppGRAlist_vertex[uiIndex_vertex_out]->VERadd_edge_to_list_edges_out(newEdgeForVertexOut);
         unsigned int uiIndex_edge_inserted_in = ppGRAlist_vertex[uiIndex_vertex_in]->VERadd_edge_to_list_edges_in(newEdgeForVertexIn);
         bool bIs_edge_not_existing = (ppGRAlist_vertex[uiIndex_vertex_out]->VERget_nb_edges_out() != uiNb_edges_out_old) && (ppGRAlist_vertex[uiIndex_vertex_in]->VERget_nb_edges_in() != uiNb_edges_in_old);
-
+        
+        delete newEdgeForVertexIn;
+        delete newEdgeForVertexOut;
+        
         return !bIs_edge_not_existing;
     }
 }
@@ -852,7 +864,9 @@ Cgraph * Cgraph::GRAinvert_all_edges() {
     Cgraph * pInvertedGraph = new Cgraph();
 
     for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
-        pInvertedGraph->GRAadd_vertex(new Cvertex(ppGRAlist_vertex[indexOfVertex]->VERget_id_vertex(), NULL, NULL, 0, 0));
+        Cvertex * pNew_vertex = new Cvertex(ppGRAlist_vertex[indexOfVertex]->VERget_id_vertex(), NULL, NULL, 0, 0);//create a new vertex who has the same id but empty list.
+        pInvertedGraph->GRAadd_vertex(pNew_vertex);//add it to the graph
+        delete pNew_vertex; //delete the new vertex
     }
     for (unsigned int indexOfVertex = 0; indexOfVertex < uiGRAnb_vertex; indexOfVertex++) {
         for (unsigned int indexOfEdge = 0; indexOfEdge < ppGRAlist_vertex[indexOfVertex]->VERget_nb_edges_in(); indexOfEdge++) {
@@ -880,7 +894,7 @@ void Cgraph::GRAdelete_vertex_pointed_by(unsigned int uiVertex_id) {
     unsigned int uiNumber_of_edges = GRAget_vertex_from_vertex_id(uiVertex_id)->VERget_nb_edges_in();
     for (unsigned int index = 0; index < uiNumber_of_edges; index++) {
         GRAremove_vertex_from_vertex_id(GRAget_vertex_from_vertex_id(uiVertex_id)->VERget_list_edges_in()[index]->EDGget_id_vertex_in());
-       
+
         //if an edge was removed by the operation we need to decrement the index to browse every edges of the list, and we need to set the new number of edge for the loop
         if (GRAget_vertex_from_vertex_id(uiVertex_id)->VERget_nb_edges_in() < uiNumber_of_edges) {
             uiNumber_of_edges = GRAget_vertex_from_vertex_id(uiVertex_id)->VERget_nb_edges_in();
@@ -1132,7 +1146,7 @@ bool Cgraph::operator==(Cgraph &graphToCompare)const {
     } else {
         //test if number of vertex are the same
         if (graphToCompare.uiGRAnb_vertex == uiGRAnb_vertex) {
-            //compare pointer on vertex list if the pointer are the same the graph are equal (but that should not appear)
+            //compare pointer on vertex list if the pointer are the same the graph are equal (that appear normally only if the two graph don't have NULL list of vertex)
             if (graphToCompare.ppGRAlist_vertex == ppGRAlist_vertex) {
                 return true;
             } else {

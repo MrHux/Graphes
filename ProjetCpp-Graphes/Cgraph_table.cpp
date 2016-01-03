@@ -157,22 +157,23 @@ void Cgraph_table::GRTadd_graph(Cgraph * pGraph) {
     Cgraph ** ppNew_graph_table = NULL;
 
     //create a new table with + 1 graph
+    unsigned int uiIndexGraph = 0;
     ppNew_graph_table = new Cgraph*[uiGRTnb_graph + 1];
-	unsigned int uiIndexGraph = 0;
-	//create a copy of the old table 
-    for(uiIndexGraph = 0 ; uiIndexGraph < uiGRTnb_graph ; uiIndexGraph ++){
-        ppNew_graph_table[uiIndexGraph]= new Cgraph(*ppGRTgraph_table[uiIndexGraph]);
+    for (uiIndexGraph = 0; uiIndexGraph < uiGRTnb_graph; uiIndexGraph++) {
+        ppNew_graph_table[uiIndexGraph] = new Cgraph(*ppGRTgraph_table[uiIndexGraph]);
     }
-    
+
     //delete the old table
     GRTempty_table();
-	uiGRTnb_graph = uiIndexGraph;
+    uiGRTnb_graph = uiIndexGraph; //GRTempty_table set uiIndexGraph to 0 so we need to get back the old number of graph
     //set the new table
     ppGRTgraph_table = ppNew_graph_table;
-    
+
     //add the graph to the table
     ppGRTgraph_table[uiGRTnb_graph] = new Cgraph(*pGraph);
-    uiGRTnb_graph++;
+    uiGRTnb_graph++; //increment number of graph
+
+
 }
 
 /*delete graph at index, insert graph, modify graph, etc are function not essential for the purpose of the project but are function who could be interesting to add for that class*/
@@ -193,35 +194,39 @@ void Cgraph_table::GRTadd_graph(Cgraph * pGraph) {
  *		Throw an exception if index is outofbound
  *
  *******************************************************************************/
-Cgraph * Cgraph_table::GRT_delete_graph_at_index(unsigned int uiIndex) {
-    Cgraph * pGraph_to_be_removed = NULL;
+void Cgraph_table::GRT_delete_graph_at_index(unsigned int uiIndex) {
+
     Cgraph_table * pNew_graph_table = NULL;
 
     if (uiIndex <= GRTget_nb_graph()) {
-        pGraph_to_be_removed = GRTget_graph(uiIndex);
 
-        pNew_graph_table = new Cgraph_table();
+        if (uiGRTnb_graph > 0) {
+            pNew_graph_table = new Cgraph_table();
 
-        //made a copy of the first uiIndex-1  graphs of the current Cgraph_table and fill the new Cgraph_table
-        if (uiIndex != 0) {
-            for (unsigned int uiIndex_of_graph = 0; uiIndex_of_graph < uiIndex; uiIndex_of_graph++) {
-
-                pNew_graph_table->GRTadd_graph(new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]));
+            //made a copy of the first uiIndex-1  graphs of the current Cgraph_table and fill the new Cgraph_table
+            if (uiIndex != 0) {
+                for (unsigned int uiIndex_of_graph = 0; uiIndex_of_graph < uiIndex; uiIndex_of_graph++) {
+                    pNew_graph_table->GRTadd_graph(this->ppGRTgraph_table[uiIndex_of_graph]);
+                }
             }
+
+            //made a copy of the last graphs uiIndex+1 graphs of the current Cgraph_table and fill the new Cgraph_table
+            for (unsigned int uiIndex_of_graph = uiIndex + 1; uiIndex_of_graph < this->GRTget_nb_graph(); uiIndex_of_graph++) {
+                pNew_graph_table->GRTadd_graph(this->ppGRTgraph_table[uiIndex_of_graph]);
+            }
+
+            //update current object
+            this->GRTempty_table();
+
+            this->ppGRTgraph_table = pNew_graph_table->ppGRTgraph_table;
+            this->uiGRTnb_graph = pNew_graph_table->uiGRTnb_graph;
+
+            pNew_graph_table->ppGRTgraph_table = NULL;
+            pNew_graph_table->uiGRTnb_graph = 0;
+
+            delete pNew_graph_table;
         }
 
-        //made a copy of the last graphs uiIndex+1 graphs of the current Cgraph_table and fill the new Cgraph_table
-        for (unsigned int uiIndex_of_graph = uiIndex + 1; uiIndex_of_graph < this->GRTget_nb_graph(); uiIndex_of_graph++) {
-            pNew_graph_table->GRTadd_graph(new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]));
-        }
-
-        //update current object
-        this->GRTempty_table();
-
-        this->ppGRTgraph_table = pNew_graph_table->ppGRTgraph_table;
-        this->uiGRTnb_graph = pNew_graph_table->uiGRTnb_graph;
-
-        return pGraph_to_be_removed;
     } else {
         Cexception exc(ERROR_INDEX_OUT_OF_BOUND);
         throw exc;
@@ -255,14 +260,17 @@ void Cgraph_table::GRT_insert_graph_at_index(unsigned int uiIndex, Cgraph * pCgr
         if (uiIndex != 0) {
             //made a copy of the first uiIndex-1  graphs of the current Cgraph_table and fill the new Cgraph_table
             for (unsigned int uiIndex_of_graph = 0; uiIndex_of_graph < uiIndex; uiIndex_of_graph++) {
-
-                pNew_graph_table->GRTadd_graph(new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]));
+                Cgraph * pNew_graph = new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]);//create a new graph (copy of graph of the list)
+                pNew_graph_table->GRTadd_graph(pNew_graph);
+                delete pNew_graph;//desallocate the graph
             }
         }
         pNew_graph_table->GRTadd_graph(pCgraph_to_add); //add the graph at the position in parameter
         //made a copy of the last graphs uiIndex graphs of the current Cgraph_table and fill the new Cgraph_table
         for (unsigned int uiIndex_of_graph = uiIndex; uiIndex_of_graph < this->GRTget_nb_graph(); uiIndex_of_graph++) {
-            pNew_graph_table->GRTadd_graph(new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]));
+            Cgraph * pNewGraph = new Cgraph(*this->ppGRTgraph_table[uiIndex_of_graph]); // allocation of a copy of the graph 
+            pNew_graph_table->GRTadd_graph(pNewGraph);//here the copy pNewGraph wiil be copied again
+            delete pNewGraph;//desallocation of the copy
         }
 
         //update the current object
@@ -270,6 +278,11 @@ void Cgraph_table::GRT_insert_graph_at_index(unsigned int uiIndex, Cgraph * pCgr
 
         this->ppGRTgraph_table = pNew_graph_table->ppGRTgraph_table;
         this->uiGRTnb_graph = pNew_graph_table->uiGRTnb_graph;
+
+        pNew_graph_table->ppGRTgraph_table = NULL;
+        pNew_graph_table->uiGRTnb_graph = 0;
+
+        delete pNew_graph_table;
 
     } else if (uiIndex == GRTget_nb_graph() + 1) {
         GRTadd_graph(pCgraph_to_add);
