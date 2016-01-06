@@ -502,13 +502,13 @@ Cedges * Cvertex::VERremove_edge_from_list_edges_in(Cedges * pEdge_to_delete) {
             for (unsigned int indexOfEdge = uiIndexOfEdgeToDelete + 1; indexOfEdge < uiVERnb_edges_in; indexOfEdge++) {
                 ppListEdgeConcat[indexOfEdge - 1] = new Cedges(*ppVERlist_edges_in[indexOfEdge]);
             }
-
+        }
             //delete old list
             for (unsigned int indexOfEdge = 0; indexOfEdge < uiVERnb_edges_in; indexOfEdge++) {
                 delete ppVERlist_edges_in[indexOfEdge];
             }
             delete[] ppVERlist_edges_in;
-        }
+        
 
         //put the new list without the removed edge
         ppVERlist_edges_in = ppListEdgeConcat;

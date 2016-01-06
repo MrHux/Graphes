@@ -80,14 +80,12 @@ public:
     /*!
      * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
      *
-     *
-
-
+     *\brief Purpose:
      *       search all the maximum independant sets of a graph
      *
      *@param
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
-     *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
+     *       Cgraph * pGraph                      -   a graph , to determine independant sets
+     *       Cgraph * pIndependant_sets    -   an independant set of the graph, NULL if first call of the function.
      *
      *@return
      *		none
@@ -98,15 +96,15 @@ public:
     /***
      * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
      *
-     *Purpose:
-     *       search all the maximum independant sets of a graph
+     *\brief Purpose:
+     *      search all the maximum independant sets of a graph
      *		This method begin to search a solution by taking the vertex who as the less edges.
      *
-     *Entry:
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
+     *@param
+     *      Cgraph * pGraph				-		a graph , to determine independant sets
      *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
      *
-     *Return:
+     *@return
      *		nothing
      *
      *******************************************************************************/
@@ -115,33 +113,32 @@ public:
     /***
      * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
      *
-     *Purpose:
+     *\brief Purpose:
      *       search all the maximum independant sets of a graph
      *
-     *Entry:
+     *@param
      *       Cgraph * pGraph				-		a graph , to determine independant sets
      *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
      *
-     *Return:
+     *@return
      *		nothing
      *
      *******************************************************************************/
     void MITenum_max_inde_set3(Cgraph * pGraph, Cgraph * pIndependant_sets);
 
     /***
-     * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
+     * void MITenum_max_inde_set(Cgraph * pGraph) - search all the maximum independant sets of a graph
      *
-     *Purpose:
+     *\brief Purpose:
      *       search the Stable maximum of a graph, by removing the vertex with the higher number of egdes until there are only :
-     * 	- vertices who are not connected to other vertex
+     * 	- isolated vertices
      * 	- group of vertices connected to each other
+     *	list all vertices of the graph
      *
-     *Entry:
-     *
+     *@param
      *       Cgraph * pGraph				-		a graph , to determine independant sets
-     *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
      *
-     *Return:
+     *@return
      *		nothing
      *******************************************************************************/
     void MITenum_max_inde_set4(Cgraph * pGraph);
@@ -150,61 +147,63 @@ public:
     /***
      * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - Heuristic that search ONE maximum independant set of a graph
      *
-     *Purpose:
+     *\brief Purpose:
      *       search ONE maximum independant set of a graph
      *
-     *Entry:
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
+     *@param
+     *      Cgraph * pGraph				-		a graph , to determine independant sets
      *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
      *
-     *Return:
+     *@return
      *		nothing
      *
      *******************************************************************************/
     void MITenum_max_inde_set5(Cgraph * pGraph, Cgraph * pIndependant_sets);
 
     /***
-     * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
+     * void MITenum_max_inde_set(Cgraph * pGraph, unsigned int uiIndex_current_vertex) - search all the maximum independant sets of a graph
      *
-     *Purpose:
-     *       search the Stable maximum of a graph, by enumering all the combinations
+     *\brief Purpose:
+     *      search the Stable maximum of a graph, by enumering all the combinations
+     *		it checks if it's good to continue on that way or not
      *
-     *Entry:
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
-     *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
+     *@param
+     *      Cgraph * pGraph						-		a graph , to determine independant sets
+     *		unsigned int uiIndex_current_vertex	-		the id of the current vertex
      *
-     *Return:
+     *@return
      *		nothing
      *
      *******************************************************************************/
     void MITenum_max_inde_set6(Cgraph * pGraph, unsigned int uiIndex_current_vertex);
+    
     /***
-     * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
+     * void MITenum_max_inde_set(Cgraph * pGraph) - search all the maximum independant sets of a graph
      *
-     *Purpose:
+     *\brief Purpose:
      *       search the Stable maximum of a graph, DIVIDE TO CONQUER
      *
-     *Entry:
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
-     *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
+     *@param
+     *       Cgraph * pGraph	-		a graph , to determine independant sets
      *
-     *Return:
+     *@return
      *		nothing
      *
      *******************************************************************************/
     void MITenum_max_inde_set8(Cgraph * pGraph, Cgraph * pIndependant_sets);
+    
     /***
      * void MITenum_max_inde_set(Cgraph * pGraph, Cgraph * pIndependant_sets) - search all the maximum independant sets of a graph
      *
-     *Purpose:
+     *\brief Purpose:
      *       search the Stable maximum of a graph
      *
-     *Entry:
-     *       Cgraph * pGraph				-		a graph , to determine independant sets
+     *@param
+     *      Cgraph * pGraph				-		a graph , to determine independant sets
      *		Cgraph * pIndependant_sets	-		an independant set of the graph, NULL if first call of the function.
      *
-     *Return:
-     *		nothing            
+     *@return
+     *		nothing
      *
      *******************************************************************************/
     void MITenum_max_inde_set7(Cgraph * pGraph);
@@ -212,14 +211,14 @@ public:
     /***
      *bool MITtest_if_solution_exist(Cgraph * pGraph_to_compare) - test if the solution is already present in the table of stable
      *
-     *Purpose:
+     *\brief Purpose:
      *       test if the solution is already present in the table of stable
      *
-     *Entry:
+     *@param
      *       Cgraph * pGraph_to_compare -   the solution to find
      *
-     *Return:
-     *      bool    True if the solution is found in the table  , false either   
+     *@return
+     *      bool    True if the solution is found in the table  , false either
      *
      *******************************************************************************/
     bool MITtest_if_solution_exist(Cgraph * pGraph_to_compare);

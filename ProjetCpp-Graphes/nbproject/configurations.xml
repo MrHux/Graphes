@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Cedges.h</itemPath>
+      <itemPath>Cedges_UNIT.h</itemPath>
+      <itemPath>Cexception.h</itemPath>
+      <itemPath>Cfile.h</itemPath>
+      <itemPath>Cfile_UNIT.h</itemPath>
+      <itemPath>Cfile_gvedit.h</itemPath>
+      <itemPath>Cgraph.h</itemPath>
+      <itemPath>Cgraph_UNIT.h</itemPath>
+      <itemPath>Cgraph_table.h</itemPath>
+      <itemPath>Cgraph_table_UNIT.h</itemPath>
+      <itemPath>Cmax_inde_sets_table.h</itemPath>
+      <itemPath>Cmax_inde_sets_table_UNIT.h</itemPath>
+      <itemPath>Cvertex.h</itemPath>
+      <itemPath>Cvertex_UNIT.h</itemPath>
+      <itemPath>stdafx.h</itemPath>
+      <itemPath>targetver.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ProjetCPP_stable_linux"
+                   displayName="ProjetCPP_stable_linux"
+                   projectFiles="true">
+      <logicalFolder name="Test_Files" displayName="Test_Files" projectFiles="true">
+        <logicalFolder name="in" displayName="in" projectFiles="true">
+          <itemPath>Test_Files/in/graph1.txt</itemPath>
+          <itemPath>Test_Files/in/graph2.txt</itemPath>
+          <itemPath>Test_Files/in/graph3.txt</itemPath>
+          <itemPath>Test_Files/in/graph4.txt</itemPath>
+          <itemPath>Test_Files/in/graph4bis.txt</itemPath>
+          <itemPath>Test_Files/in/graph5.txt</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Cedges.cpp</itemPath>
+      <itemPath>Cedges_UNIT.cpp</itemPath>
+      <itemPath>Cexception.cpp</itemPath>
+      <itemPath>Cfile.cpp</itemPath>
+      <itemPath>Cfile_UNIT.cpp</itemPath>
+      <itemPath>Cfile_gvedit.cpp</itemPath>
+      <itemPath>Cgraph.cpp</itemPath>
+      <itemPath>Cgraph_UNIT.cpp</itemPath>
+      <itemPath>Cgraph_table.cpp</itemPath>
+      <itemPath>Cgraph_table_UNIT.cpp</itemPath>
+      <itemPath>Cmax_inde_sets_table.cpp</itemPath>
+      <itemPath>Cmax_inde_sets_table_UNIT.cpp</itemPath>
+      <itemPath>Cvertex.cpp</itemPath>
+      <itemPath>Cvertex_UNIT.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>stdafx.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandLine>-DDEBUG</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="Cedges.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cedges.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cedges_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cedges_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cexception.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cexception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile_gvedit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile_gvedit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_table.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_table_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_table_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cvertex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cvertex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cvertex_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cvertex_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph1.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph2.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph3.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph4.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph4bis.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph5.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Cedges.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cedges.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cedges_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cedges_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cexception.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cexception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cfile_gvedit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cfile_gvedit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_table.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cgraph_table_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cgraph_table_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cmax_inde_sets_table_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cvertex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cvertex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cvertex_UNIT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Cvertex_UNIT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph1.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph2.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph3.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph4.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph4bis.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Test_Files/in/graph5.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="targetver.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
