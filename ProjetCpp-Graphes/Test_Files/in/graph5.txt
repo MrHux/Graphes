@@ -1,4 +1,4 @@
-NBSommets=15
+NBSommets=20
 NBArcs=31
 Sommets=[
 Numero=1
@@ -16,6 +16,11 @@ Numero=12
 Numero=13
 Numero=14
 Numero=15
+Numero=16
+Numero=17
+Numero=18
+Numero=19
+Numero=20
 ]
 Arcs=[
 Debut=1, Fin=2

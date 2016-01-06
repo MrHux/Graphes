@@ -139,6 +139,7 @@ Cvertex::Cvertex(unsigned int uiId_vertex, Cedges** ppList_edges_out, Cedges** p
  *******************************************************************************/
 Cvertex::~Cvertex() {
 
+    //delete the list of edge in
     if (ppVERlist_edges_in != NULL) {
         for (unsigned int indexOfEdgeIn = 0; indexOfEdgeIn < uiVERnb_edges_in; indexOfEdgeIn++) {
             if (ppVERlist_edges_in[indexOfEdgeIn] != NULL) {
@@ -150,6 +151,8 @@ Cvertex::~Cvertex() {
         ppVERlist_edges_in = NULL;
 
     }
+    
+    //delete the list of edge 
     if (ppVERlist_edges_out != NULL) {
         for (unsigned int indexOfEdgeOut = 0; indexOfEdgeOut < uiVERnb_edges_out; indexOfEdgeOut++) {
             if (ppVERlist_edges_out[indexOfEdgeOut] != NULL) {

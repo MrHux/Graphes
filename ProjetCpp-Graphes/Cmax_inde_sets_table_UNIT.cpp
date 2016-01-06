@@ -49,19 +49,19 @@ void Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set() {
     Cgraph * pIndependant_set = new Cgraph();
 
     pGraph1->GRAprint();
+    
 
     pMax_inde_sets_table->MITenum_max_inde_set(pGraph1, pIndependant_set);
 
     assert(pMax_inde_sets_table->GRTget_nb_graph() == 3);
 
-    delete pIndependant_set;
 
     printf("Test : correct max independant sets size found \n");
 
     assert(pMax_inde_sets_table->MITget_size_max() == 1);
 
     Cgraph * pGraph2 = new Cgraph();
-    pIndependant_set = new Cgraph();
+
 
     pMax_inde_sets_table->GRTempty_table();
 
