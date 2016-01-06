@@ -1,0 +1,1 @@
+valgrind --leak-check=yes ../dist/Debug/GNU-Linux-x86/projetcpp_stable_linux ../Test_Files/in/graph4.txt

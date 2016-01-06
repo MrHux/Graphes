@@ -1,0 +1,813 @@
+\hypertarget{class_cvertex}{}\section{Cvertex Class Reference}
+\label{class_cvertex}\index{Cvertex@{Cvertex}}
+
+
+\hyperlink{class_cvertex}{Cvertex} Class.  
+
+
+
+
+{\ttfamily \#include $<$Cvertex.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}{Cvertex} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: allocate a new \hyperlink{class_cvertex}{Cvertex} and initialize it with null value. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex_a3c091dc9431a4144f9d97767dd996186}{Cvertex} (const \hyperlink{class_cvertex}{Cvertex} \&vertex\+\_\+to\+\_\+copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cvertex}{Cvertex} with the value of another one. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex_a9a4fa4f830633c4adabd066c75ca148d}{Cvertex} (unsigned int ui\+Id\+\_\+vertex, \hyperlink{class_cedges}{Cedges} $\ast$$\ast$pp\+List\+\_\+edges\+\_\+out, \hyperlink{class_cedges}{Cedges} $\ast$$\ast$pp\+List\+\_\+edges\+\_\+in, unsigned int ui\+Nb\+\_\+edges\+\_\+out, unsigned int ui\+Nb\+\_\+edges\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cvertex}{Cvertex} with the value in parameters pp\+List\+\_\+edges\+\_\+out, pp\+List\+\_\+edges\+\_\+in need to have a correct number of edge respectively in ui\+Nb\+\_\+edges\+\_\+out, ui\+Nb\+\_\+edges\+\_\+in. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex_a91b564020e4c5b73f971f8d4e35dd952}{$\sim$\+Cvertex} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: destroy a \hyperlink{class_cvertex}{Cvertex} correctly. \end{DoxyCompactList}\item 
+void \hyperlink{class_cvertex_a6d76189e22c29a74cbae5a9a3507c312}{V\+E\+Rset\+\_\+id\+\_\+vertex} (unsigned int ui\+Id)
+\begin{DoxyCompactList}\small\item\em Purpose\+: set the id of a vertex. \end{DoxyCompactList}\item 
+void \hyperlink{class_cvertex_a0816cd7d37fe2ae4e6d347c98b5d603c}{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out} (\hyperlink{class_cedges}{Cedges} $\ast$$\ast$pp\+List\+\_\+edges\+\_\+out, unsigned int ui\+Nb\+\_\+edges\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Purpose\+: set the list of edge who go out the vertex pp\+List\+\_\+edges\+\_\+out need to have a correct number of edge ui\+Nb\+\_\+edges\+\_\+out. \end{DoxyCompactList}\item 
+void \hyperlink{class_cvertex_a08f128a8c3988e24e62806f6655b4a37}{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in} (\hyperlink{class_cedges}{Cedges} $\ast$$\ast$pp\+List\+\_\+edges\+\_\+in, unsigned int ui\+Nb\+\_\+edges\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: set the list of edge who go in of the vertex pp\+List\+\_\+edges\+\_\+in need to have a correct number of edge ui\+Nb\+\_\+edges\+\_\+in. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_ac2a86a2638f4b4ac43c9937aa76671a8}{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add an edge to the list of edge who go out the vertex if the edge is already in the list it\textquotesingle{}s not added. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a49f2c7dde7f059ba1a03f60cac1dbecf}{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add an edge to the list of edge who go in the vertex if the edge is already in the list it\textquotesingle{}s not added. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$ \hyperlink{class_cvertex_a44706c419e68981b586735e6af81edc1}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out} (unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge of the list of edge who go out the vertex if the edge is not in the list that return N\+U\+L\+L. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$ \hyperlink{class_cvertex_a4132709e06e653282a058fedb5274116}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in} (unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge of the list of edge who go in the vertex if the edge is not in the list that return N\+U\+L\+L. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$ \hyperlink{class_cvertex_ab699b9cc8727c4cef97ef26de16aaa0d}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge of the list of edge who go out the vertex if the edge is not in the list that return N\+U\+L\+L. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$ \hyperlink{class_cvertex_a49d5999465dd41b5d64f5339c2476272}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+delete)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge of the list of edge who go in the vertex if the edge is not in the list that return N\+U\+L\+L. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a2091154529123d16fb0913c6a23f11c1}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+find)
+\begin{DoxyCompactList}\small\item\em Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a59f3b2cac925e322344e3158a762b8c5}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in} (\hyperlink{class_cedges}{Cedges} $\ast$p\+Edge\+\_\+to\+\_\+find)
+\begin{DoxyCompactList}\small\item\em Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go in of the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a65e2d9b32e91dbaf38fe44881b6eb425}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out} (unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find)
+\begin{DoxyCompactList}\small\item\em Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_ac3c85ea85f5abd32877f5bcae8fd012e}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in} (unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find)
+\begin{DoxyCompactList}\small\item\em Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a3a792e08f085841355b57639e66bda1e}{V\+E\+Rget\+\_\+id\+\_\+vertex} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the id of the vertex. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$$\ast$ \hyperlink{class_cvertex_a7e7923c919c93f15414b6c49b252a780}{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the list of the edge who go out the vertex. \end{DoxyCompactList}\item 
+\hyperlink{class_cedges}{Cedges} $\ast$$\ast$ \hyperlink{class_cvertex_a0bc728846b99cfd6f2cb5b9970927bfc}{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the list of the edge who go in the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_a887835cc19a342b774cf5426f27093c3}{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the number of edges who go out the vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cvertex_ab94674408a2d7c7bb651ab2ef0432d16}{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the number of edges who go in the vertex. \end{DoxyCompactList}\item 
+unsigned int $\ast$ \hyperlink{class_cvertex_af741ade2dfb1c3b5839c2bdf1be1bff9}{V\+E\+Rget\+\_\+pred\+\_\+succ} ()
+\item 
+bool \hyperlink{class_cvertex_ad7afc0debf91cb6e6aae63a31439f5e9}{V\+E\+Ris\+\_\+vertex\+\_\+equivalent} (\hyperlink{class_cvertex}{Cvertex} $\ast$p\+Vertex\+To\+Compare)
+\item 
+\hyperlink{class_cvertex}{Cvertex} \& \hyperlink{class_cvertex_a8310facad7189774fd01cb2dcc4e975f}{operator=} (const \hyperlink{class_cvertex}{Cvertex} \&vertex\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: enable the affectation of a \hyperlink{class_cvertex}{Cvertex} by another. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cvertex_a57b1f8e53f55ec33efdb7f62e9ea2584}{operator==} (\hyperlink{class_cvertex}{Cvertex} \&vertex\+To\+Compare)
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two \hyperlink{class_cvertex}{Cvertex}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cvertex_a2f3a0e226d96aacd1803e32278bd5930}{operator!=} (\hyperlink{class_cvertex}{Cvertex} \&vertex\+To\+Compare)
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two \hyperlink{class_cvertex}{Cvertex}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_cvertex_ad10db8510c415314374789472f1436fc}{ui\+V\+E\+Rid\+\_\+vertex}
+\item 
+\hyperlink{class_cedges}{Cedges} $\ast$$\ast$ \hyperlink{class_cvertex_a4ab1d9ae28e17af0c8c3bc9da55d6e0a}{pp\+V\+E\+Rlist\+\_\+edges\+\_\+out}
+\item 
+\hyperlink{class_cedges}{Cedges} $\ast$$\ast$ \hyperlink{class_cvertex_a3a98de13fcfd72d549b013a4697b795e}{pp\+V\+E\+Rlist\+\_\+edges\+\_\+in}
+\item 
+unsigned int \hyperlink{class_cvertex_aefb09bb4a45f00a7de925bb63d2291a7}{ui\+V\+E\+Rnb\+\_\+edges\+\_\+in}
+\item 
+unsigned int \hyperlink{class_cvertex_a9b4b73496d3b28aef0912519d774572f}{ui\+V\+E\+Rnb\+\_\+edges\+\_\+out}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_cvertex}{Cvertex} Class. 
+
+Definition at line 18 of file Cvertex.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}{}\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\subsubsection[{Cvertex}]{\setlength{\rightskip}{0pt plus 5cm}Cvertex\+::\+Cvertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}
+
+
+Purpose\+: allocate a new \hyperlink{class_cvertex}{Cvertex} and initialize it with null value. 
+
+\hyperlink{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}{Cvertex()} -\/ allocate a new \hyperlink{class_cvertex}{Cvertex} and initialize it
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a3c091dc9431a4144f9d97767dd996186}{}\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\subsubsection[{Cvertex}]{\setlength{\rightskip}{0pt plus 5cm}Cvertex\+::\+Cvertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cvertex} \&}]{vertex\+\_\+to\+\_\+copy}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a3c091dc9431a4144f9d97767dd996186}
+
+
+Purpose\+: create a new \hyperlink{class_cvertex}{Cvertex} with the value of another one. 
+
+\hyperlink{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}{Cvertex()} -\/ create a new \hyperlink{class_cvertex}{Cvertex} with the value of another one
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cvertex}{Cvertex} \& vertex\+\_\+to\+\_\+copy -\/ the \hyperlink{class_cvertex}{Cvertex} to copy, if N\+U\+L\+L do the same as default constructor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a9a4fa4f830633c4adabd066c75ca148d}{}\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\index{Cvertex@{Cvertex}!Cvertex@{Cvertex}}
+\subsubsection[{Cvertex}]{\setlength{\rightskip}{0pt plus 5cm}Cvertex\+::\+Cvertex (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex, }
+\item[{{\bf Cedges} $\ast$$\ast$}]{pp\+List\+\_\+edges\+\_\+out, }
+\item[{{\bf Cedges} $\ast$$\ast$}]{pp\+List\+\_\+edges\+\_\+in, }
+\item[{unsigned int}]{ui\+Nb\+\_\+edges\+\_\+out, }
+\item[{unsigned int}]{ui\+Nb\+\_\+edges\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a9a4fa4f830633c4adabd066c75ca148d}
+
+
+Purpose\+: create a new \hyperlink{class_cvertex}{Cvertex} with the value in parameters pp\+List\+\_\+edges\+\_\+out, pp\+List\+\_\+edges\+\_\+in need to have a correct number of edge respectively in ui\+Nb\+\_\+edges\+\_\+out, ui\+Nb\+\_\+edges\+\_\+in. 
+
+\hyperlink{class_cvertex_a4256affe77ee305afaf51aa9fcbd1cf0}{Cvertex()} -\/ create a new \hyperlink{class_cvertex}{Cvertex} with the value in parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex -\/ the id of the vertex \\
+\hline
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$$\ast$ pp\+List\+\_\+edges\+\_\+out -\/ the list of edges who go out the vertex \\
+\hline
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$$\ast$ pp\+List\+\_\+edges\+\_\+in -\/ the list of edges who go in the vertex \\
+\hline
+{\em unsigned} & int ui\+Nb\+\_\+edges\+\_\+out -\/ number of edges who go out the vertex \\
+\hline
+{\em unsigned} & int ui\+Nb\+\_\+edges\+\_\+in -\/ number of edges who go in the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em E\+R\+R\+O\+R\+\_\+\+N\+U\+L\+L\+\_\+\+L\+I\+S\+T\+\_\+\+N\+B\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L} & -\/ if one of the list in parameter is N\+U\+L\+L and the number of edges associated is not 0 \\
+\hline
+{\em E\+R\+R\+O\+R\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L} & -\/ if one of the list in parameter is not N\+U\+L\+L and the number of edges associated is 0 \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 85 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a91b564020e4c5b73f971f8d4e35dd952}{}\index{Cvertex@{Cvertex}!````~Cvertex@{$\sim$\+Cvertex}}
+\index{````~Cvertex@{$\sim$\+Cvertex}!Cvertex@{Cvertex}}
+\subsubsection[{$\sim$\+Cvertex}]{\setlength{\rightskip}{0pt plus 5cm}Cvertex\+::$\sim$\+Cvertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a91b564020e4c5b73f971f8d4e35dd952}
+
+
+Purpose\+: destroy a \hyperlink{class_cvertex}{Cvertex} correctly. 
+
+\hyperlink{class_cvertex_a91b564020e4c5b73f971f8d4e35dd952}{$\sim$\+Cvertex()} -\/ destroy a \hyperlink{class_cvertex}{Cvertex} correctly
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Cvertex.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cvertex_a2f3a0e226d96aacd1803e32278bd5930}{}\index{Cvertex@{Cvertex}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Cvertex@{Cvertex}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Cvertex\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} \&}]{vertex\+To\+Compare}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a2f3a0e226d96aacd1803e32278bd5930}
+
+
+Purpose\+: compare two \hyperlink{class_cvertex}{Cvertex}. 
+
+operator!=(const Cvertex \&vertex\+\_\+to\+\_\+copy) -\/ compare two \hyperlink{class_cvertex}{Cvertex}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cvertex}{Cvertex}} & \& vertex\+To\+Compare -\/ the \hyperlink{class_cvertex}{Cvertex} to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ false if the two \hyperlink{class_cvertex}{Cvertex} are equal (in term of value not address), true if they are differents. 
+\end{DoxyReturn}
+
+
+Definition at line 863 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a8310facad7189774fd01cb2dcc4e975f}{}\index{Cvertex@{Cvertex}!operator=@{operator=}}
+\index{operator=@{operator=}!Cvertex@{Cvertex}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} \& Cvertex\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cvertex} \&}]{vertex\+To\+Copy}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a8310facad7189774fd01cb2dcc4e975f}
+
+
+Purpose\+: enable the affectation of a \hyperlink{class_cvertex}{Cvertex} by another. 
+
+\hyperlink{class_cvertex_a8310facad7189774fd01cb2dcc4e975f}{operator=(const Cvertex \&vertex\+\_\+to\+\_\+copy)} -\/ equal operator
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cvertex}{Cvertex} \& vertex\+\_\+to\+\_\+copy -\/ the \hyperlink{class_cvertex}{Cvertex} to copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} \& -\/ change the values of the object who call the operator 
+\end{DoxyReturn}
+
+
+Definition at line 769 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a57b1f8e53f55ec33efdb7f62e9ea2584}{}\index{Cvertex@{Cvertex}!operator==@{operator==}}
+\index{operator==@{operator==}!Cvertex@{Cvertex}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Cvertex\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} \&}]{vertex\+To\+Compare}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a57b1f8e53f55ec33efdb7f62e9ea2584}
+
+
+Purpose\+: compare two \hyperlink{class_cvertex}{Cvertex}. 
+
+operator==(const Cvertex \&vertex\+\_\+to\+\_\+copy) -\/ compare two \hyperlink{class_cvertex}{Cvertex}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cvertex}{Cvertex}} & \& vertex\+To\+Compare -\/ the \hyperlink{class_cvertex}{Cvertex} to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if the two \hyperlink{class_cvertex}{Cvertex} are equal (in term of value not address), false if they are differents. 
+\end{DoxyReturn}
+
+
+Definition at line 814 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a49f2c7dde7f059ba1a03f60cac1dbecf}{}\index{Cvertex@{Cvertex}!V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in}}
+\index{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+add}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a49f2c7dde7f059ba1a03f60cac1dbecf}
+
+
+Purpose\+: add an edge to the list of edge who go in the vertex if the edge is already in the list it\textquotesingle{}s not added. 
+
+\hyperlink{class_cvertex_a49f2c7dde7f059ba1a03f60cac1dbecf}{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+in(\+Cedges $\ast$ p\+Edge\+\_\+to\+\_\+add)} -\/ add an edge to the list of edge who go in the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+add -\/ the edge to add to the list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ the position of the edge in the list 
+\end{DoxyReturn}
+
+
+Definition at line 347 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_ac2a86a2638f4b4ac43c9937aa76671a8}{}\index{Cvertex@{Cvertex}!V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out}}
+\index{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+add}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_ac2a86a2638f4b4ac43c9937aa76671a8}
+
+
+Purpose\+: add an edge to the list of edge who go out the vertex if the edge is already in the list it\textquotesingle{}s not added. 
+
+\hyperlink{class_cvertex_ac2a86a2638f4b4ac43c9937aa76671a8}{V\+E\+Radd\+\_\+edge\+\_\+to\+\_\+list\+\_\+edges\+\_\+out(\+Cedges $\ast$ p\+Edge\+\_\+to\+\_\+add)} -\/ add an edge to the list of edge who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+add -\/ the edge to add to the list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ the position of the edge in the list 
+\end{DoxyReturn}
+
+
+Definition at line 306 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a59f3b2cac925e322344e3158a762b8c5}{}\index{Cvertex@{Cvertex}!V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}}
+\index{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+find}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a59f3b2cac925e322344e3158a762b8c5}
+
+
+Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go in of the vertex. 
+
+\hyperlink{class_cvertex_a59f3b2cac925e322344e3158a762b8c5}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in(\+Cedges $\ast$ p\+Edge\+\_\+to\+\_\+find)} -\/ find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go in of the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+find -\/ pointer on the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the index of the edge in the list, if the edge is not found return U\+I\+N\+T\+\_\+\+M\+A\+X 
+\end{DoxyReturn}
+
+
+Definition at line 547 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_ac3c85ea85f5abd32877f5bcae8fd012e}{}\index{Cvertex@{Cvertex}!V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}}
+\index{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_ac3c85ea85f5abd32877f5bcae8fd012e}
+
+
+Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. 
+
+\hyperlink{class_cvertex_ac3c85ea85f5abd32877f5bcae8fd012e}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+in(unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find)} -\/ find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go in of the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find -\/ id of the vertex inside the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the index of the edge in the list, if the edge is not found return U\+I\+N\+T\+\_\+\+M\+A\+X 
+\end{DoxyReturn}
+
+
+Definition at line 595 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a2091154529123d16fb0913c6a23f11c1}{}\index{Cvertex@{Cvertex}!V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}}
+\index{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+find}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a2091154529123d16fb0913c6a23f11c1}
+
+
+Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. 
+
+\hyperlink{class_cvertex_a2091154529123d16fb0913c6a23f11c1}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out(\+Cedges $\ast$ p\+Edge\+\_\+to\+\_\+find)} -\/ find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+find -\/ pointer on the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the index of the edge in the list, if the edge is not found return U\+I\+N\+T\+\_\+\+M\+A\+X 
+\end{DoxyReturn}
+
+
+Definition at line 522 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a65e2d9b32e91dbaf38fe44881b6eb425}{}\index{Cvertex@{Cvertex}!V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}}
+\index{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out@{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a65e2d9b32e91dbaf38fe44881b6eb425}
+
+
+Purpose\+: find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex. 
+
+\hyperlink{class_cvertex_a65e2d9b32e91dbaf38fe44881b6eb425}{V\+E\+Rfind\+\_\+index\+\_\+in\+\_\+list\+\_\+edge\+\_\+out(unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find)} -\/ find the index of a \hyperlink{class_cedges}{Cedges} in the list of edge who go out of the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+find -\/ id of the vertex inside the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the index of the edge in the list, if the edge is not found return U\+I\+N\+T\+\_\+\+M\+A\+X 
+\end{DoxyReturn}
+
+
+Definition at line 572 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a3a792e08f085841355b57639e66bda1e}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+id\+\_\+vertex@{V\+E\+Rget\+\_\+id\+\_\+vertex}}
+\index{V\+E\+Rget\+\_\+id\+\_\+vertex@{V\+E\+Rget\+\_\+id\+\_\+vertex}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+id\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rget\+\_\+id\+\_\+vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a3a792e08f085841355b57639e66bda1e}
+
+
+Purpose\+: get the id of the vertex. 
+
+\hyperlink{class_cvertex_a3a792e08f085841355b57639e66bda1e}{V\+E\+Rget\+\_\+id\+\_\+vertex()} -\/ get the id of the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the id of the vertex 
+\end{DoxyReturn}
+
+
+Definition at line 615 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a0bc728846b99cfd6f2cb5b9970927bfc}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in}}
+\index{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$$\ast$ Cvertex\+::\+V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a0bc728846b99cfd6f2cb5b9970927bfc}
+
+
+Purpose\+: get the list of the edge who go in the vertex. 
+
+\hyperlink{class_cvertex_a7e7923c919c93f15414b6c49b252a780}{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out()} -\/ get the list of the edge who go in the vertex
+
+\begin{DoxyReturn}{Returns}
+Cedges$\ast$$\ast$ -\/ the list of edges 
+\end{DoxyReturn}
+
+
+Definition at line 647 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a7e7923c919c93f15414b6c49b252a780}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out}}
+\index{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$$\ast$ Cvertex\+::\+V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a7e7923c919c93f15414b6c49b252a780}
+
+
+Purpose\+: get the list of the edge who go out the vertex. 
+
+\hyperlink{class_cvertex_a7e7923c919c93f15414b6c49b252a780}{V\+E\+Rget\+\_\+list\+\_\+edges\+\_\+out()} -\/ get the list of the edge who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cedges$\ast$$\ast$ -\/ the list of edges 
+\end{DoxyReturn}
+
+
+Definition at line 631 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_ab94674408a2d7c7bb651ab2ef0432d16}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in@{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in}}
+\index{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in@{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_ab94674408a2d7c7bb651ab2ef0432d16}
+
+
+Purpose\+: get the number of edges who go in the vertex. 
+
+\hyperlink{class_cvertex_a887835cc19a342b774cf5426f27093c3}{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out()} -\/ get the number of edges who go in the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+find -\/ the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the number of edges of the list 
+\end{DoxyReturn}
+
+
+Definition at line 685 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a887835cc19a342b774cf5426f27093c3}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out@{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out}}
+\index{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out@{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::\+V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a887835cc19a342b774cf5426f27093c3}
+
+
+Purpose\+: get the number of edges who go out the vertex. 
+
+\hyperlink{class_cvertex_a887835cc19a342b774cf5426f27093c3}{V\+E\+Rget\+\_\+nb\+\_\+edges\+\_\+out()} -\/ get the number of edges who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+find -\/ the edge to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned in -\/ the number of edges of the list 
+\end{DoxyReturn}
+
+
+Definition at line 666 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_af741ade2dfb1c3b5839c2bdf1be1bff9}{}\index{Cvertex@{Cvertex}!V\+E\+Rget\+\_\+pred\+\_\+succ@{V\+E\+Rget\+\_\+pred\+\_\+succ}}
+\index{V\+E\+Rget\+\_\+pred\+\_\+succ@{V\+E\+Rget\+\_\+pred\+\_\+succ}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rget\+\_\+pred\+\_\+succ}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int $\ast$ Cvertex\+::\+V\+E\+Rget\+\_\+pred\+\_\+succ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_af741ade2dfb1c3b5839c2bdf1be1bff9}
+
+
+Definition at line 690 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_ad7afc0debf91cb6e6aae63a31439f5e9}{}\index{Cvertex@{Cvertex}!V\+E\+Ris\+\_\+vertex\+\_\+equivalent@{V\+E\+Ris\+\_\+vertex\+\_\+equivalent}}
+\index{V\+E\+Ris\+\_\+vertex\+\_\+equivalent@{V\+E\+Ris\+\_\+vertex\+\_\+equivalent}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Ris\+\_\+vertex\+\_\+equivalent}]{\setlength{\rightskip}{0pt plus 5cm}bool Cvertex\+::\+V\+E\+Ris\+\_\+vertex\+\_\+equivalent (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} $\ast$}]{p\+Vertex\+To\+Compare}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_ad7afc0debf91cb6e6aae63a31439f5e9}
+
+
+Definition at line 725 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a4132709e06e653282a058fedb5274116}{}\index{Cvertex@{Cvertex}!V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}}
+\index{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$ Cvertex\+::\+V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a4132709e06e653282a058fedb5274116}
+
+
+Purpose\+: remove an edge of the list of edge who go in the vertex if the edge is not in the list that return N\+U\+L\+L. 
+
+\hyperlink{class_cvertex_a4132709e06e653282a058fedb5274116}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in(unsigned int ui\+Id\+\_\+vertex\+\_\+in\+\_\+edge\+\_\+to\+\_\+delete)} -\/ remove an edge of the list of edge who go in the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete -\/ the Id of the vertex in the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cedges}{Cedges} $\ast$ -\/ if !\+N\+U\+L\+L a pointer on the \hyperlink{class_cedges}{Cedges} who has been successfully removed 
+\end{DoxyReturn}
+
+
+Definition at line 409 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a49d5999465dd41b5d64f5339c2476272}{}\index{Cvertex@{Cvertex}!V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}}
+\index{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$ Cvertex\+::\+V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+delete}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a49d5999465dd41b5d64f5339c2476272}
+
+
+Purpose\+: remove an edge of the list of edge who go in the vertex if the edge is not in the list that return N\+U\+L\+L. 
+
+\hyperlink{class_cvertex_a4132709e06e653282a058fedb5274116}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+in(unsigned int ui\+Id\+\_\+vertex\+\_\+in\+\_\+edge\+\_\+to\+\_\+delete)} -\/ remove an edge of the list of edge who go in the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+delete -\/ pointer on the \hyperlink{class_cedges}{Cedges} to remove (this pointer don\textquotesingle{}t need to be a pointer on the \hyperlink{class_cedges}{Cedges} in the graph, but can be a copy of the \hyperlink{class_cedges}{Cedges})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cedges}{Cedges} $\ast$ -\/ if !\+N\+U\+L\+L a pointer on the \hyperlink{class_cedges}{Cedges} who has been successfully removed 
+\end{DoxyReturn}
+
+
+Definition at line 477 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a44706c419e68981b586735e6af81edc1}{}\index{Cvertex@{Cvertex}!V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}}
+\index{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$ Cvertex\+::\+V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a44706c419e68981b586735e6af81edc1}
+
+
+Purpose\+: remove an edge of the list of edge who go out the vertex if the edge is not in the list that return N\+U\+L\+L. 
+
+\hyperlink{class_cvertex_a44706c419e68981b586735e6af81edc1}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out(unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete)} -\/ remove an edge of the list of edge who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete -\/ the Id of the vertex in the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cedges}{Cedges} $\ast$ -\/ if !\+N\+U\+L\+L a pointer on the \hyperlink{class_cedges}{Cedges} who has been successfully removed 
+\end{DoxyReturn}
+
+
+Definition at line 387 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_ab699b9cc8727c4cef97ef26de16aaa0d}{}\index{Cvertex@{Cvertex}!V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}}
+\index{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges} $\ast$ Cvertex\+::\+V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$}]{p\+Edge\+\_\+to\+\_\+delete}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_ab699b9cc8727c4cef97ef26de16aaa0d}
+
+
+Purpose\+: remove an edge of the list of edge who go out the vertex if the edge is not in the list that return N\+U\+L\+L. 
+
+\hyperlink{class_cvertex_a44706c419e68981b586735e6af81edc1}{V\+E\+Rremove\+\_\+edge\+\_\+from\+\_\+list\+\_\+edges\+\_\+out(unsigned int ui\+Id\+\_\+vertex\+\_\+out\+\_\+edge\+\_\+to\+\_\+delete)} -\/ remove an edge of the list of edge who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$ p\+Edge\+\_\+to\+\_\+delete -\/ pointer on the \hyperlink{class_cedges}{Cedges} to remove (this pointer don\textquotesingle{}t need to be a pointer on the \hyperlink{class_cedges}{Cedges} in the graph, but can be a copy of the \hyperlink{class_cedges}{Cedges})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cedges}{Cedges} $\ast$ -\/ if !\+N\+U\+L\+L a pointer on the \hyperlink{class_cedges}{Cedges} who has been successfully removed 
+\end{DoxyReturn}
+
+
+Definition at line 432 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a6d76189e22c29a74cbae5a9a3507c312}{}\index{Cvertex@{Cvertex}!V\+E\+Rset\+\_\+id\+\_\+vertex@{V\+E\+Rset\+\_\+id\+\_\+vertex}}
+\index{V\+E\+Rset\+\_\+id\+\_\+vertex@{V\+E\+Rset\+\_\+id\+\_\+vertex}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rset\+\_\+id\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}void Cvertex\+::\+V\+E\+Rset\+\_\+id\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a6d76189e22c29a74cbae5a9a3507c312}
+
+
+Purpose\+: set the id of a vertex. 
+
+\hyperlink{class_cvertex_a6d76189e22c29a74cbae5a9a3507c312}{V\+E\+Rset\+\_\+id\+\_\+vertex(unsigned int ui\+Id)} -\/ set the id of a vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id -\/ the id of the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a08f128a8c3988e24e62806f6655b4a37}{}\index{Cvertex@{Cvertex}!V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in}}
+\index{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in@{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}void Cvertex\+::\+V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$$\ast$}]{pp\+List\+\_\+edges\+\_\+in, }
+\item[{unsigned int}]{ui\+Nb\+\_\+edges\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a08f128a8c3988e24e62806f6655b4a37}
+
+
+Purpose\+: set the list of edge who go in of the vertex pp\+List\+\_\+edges\+\_\+in need to have a correct number of edge ui\+Nb\+\_\+edges\+\_\+in. 
+
+\hyperlink{class_cvertex_a08f128a8c3988e24e62806f6655b4a37}{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+in(\+Cedges$\ast$$\ast$ pp\+List\+\_\+edges\+\_\+in, unsigned int ui\+Nb\+\_\+edges\+\_\+in)} -\/ set the list of edge who go in the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$$\ast$ pp\+List\+\_\+edges\+\_\+in -\/ the list of edges who go in the vertex \\
+\hline
+{\em unsigned} & int ui\+Nb\+\_\+edges\+\_\+in -\/ number of edges who go in the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em E\+R\+R\+O\+R\+\_\+\+N\+U\+L\+L\+\_\+\+L\+I\+S\+T\+\_\+\+N\+B\+\_\+\+E\+L\+E\+M\+E\+N\+T\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L} & -\/ if the list in parameter is N\+U\+L\+L and the number of edges associated is not 0 E\+R\+R\+O\+R\+\_\+\+L\+I\+S\+T\+\_\+\+N\+O\+T\+\_\+\+N\+U\+L\+L -\/ if the list in parameter is not N\+U\+L\+L and the number of edges associated is 0 \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 253 of file Cvertex.\+cpp.
+
+\hypertarget{class_cvertex_a0816cd7d37fe2ae4e6d347c98b5d603c}{}\index{Cvertex@{Cvertex}!V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out}}
+\index{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out@{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}void Cvertex\+::\+V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out (
+\begin{DoxyParamCaption}
+\item[{{\bf Cedges} $\ast$$\ast$}]{pp\+List\+\_\+edges\+\_\+out, }
+\item[{unsigned int}]{ui\+Nb\+\_\+edges\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{class_cvertex_a0816cd7d37fe2ae4e6d347c98b5d603c}
+
+
+Purpose\+: set the list of edge who go out the vertex pp\+List\+\_\+edges\+\_\+out need to have a correct number of edge ui\+Nb\+\_\+edges\+\_\+out. 
+
+\hyperlink{class_cvertex_a0816cd7d37fe2ae4e6d347c98b5d603c}{V\+E\+Rset\+\_\+list\+\_\+edges\+\_\+out(\+Cedges$\ast$$\ast$ pp\+List\+\_\+edges\+\_\+out, unsigned int ui\+Nb\+\_\+edges\+\_\+out)} -\/ set the list of edge who go out the vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cedges}{Cedges}} & $\ast$$\ast$ pp\+List\+\_\+edges\+\_\+out -\/ the list of edges who go out the vertex \\
+\hline
+{\em unsigned} & int ui\+Nb\+\_\+edges\+\_\+out -\/ number of edges who go out the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none \begin{DoxyVerb}rows
+    ERROR_NULL_LIST_NB_ELEMENT_NOT_NULL -   if the list in parameter is NULL and the number of edges associated is not 0
+    ERROR_LIST_NOT_NULL                 -   if the list in parameter is not NULL and the number of edges associated is 0\end{DoxyVerb}
+ 
+\end{DoxyReturn}
+
+
+Definition at line 196 of file Cvertex.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_cvertex_a3a98de13fcfd72d549b013a4697b795e}{}\index{Cvertex@{Cvertex}!pp\+V\+E\+Rlist\+\_\+edges\+\_\+in@{pp\+V\+E\+Rlist\+\_\+edges\+\_\+in}}
+\index{pp\+V\+E\+Rlist\+\_\+edges\+\_\+in@{pp\+V\+E\+Rlist\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{pp\+V\+E\+Rlist\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges}$\ast$$\ast$ Cvertex\+::pp\+V\+E\+Rlist\+\_\+edges\+\_\+in\hspace{0.3cm}{\ttfamily [private]}}\label{class_cvertex_a3a98de13fcfd72d549b013a4697b795e}
+
+
+Definition at line 25 of file Cvertex.\+h.
+
+\hypertarget{class_cvertex_a4ab1d9ae28e17af0c8c3bc9da55d6e0a}{}\index{Cvertex@{Cvertex}!pp\+V\+E\+Rlist\+\_\+edges\+\_\+out@{pp\+V\+E\+Rlist\+\_\+edges\+\_\+out}}
+\index{pp\+V\+E\+Rlist\+\_\+edges\+\_\+out@{pp\+V\+E\+Rlist\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{pp\+V\+E\+Rlist\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cedges}$\ast$$\ast$ Cvertex\+::pp\+V\+E\+Rlist\+\_\+edges\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}\label{class_cvertex_a4ab1d9ae28e17af0c8c3bc9da55d6e0a}
+
+
+Definition at line 23 of file Cvertex.\+h.
+
+\hypertarget{class_cvertex_ad10db8510c415314374789472f1436fc}{}\index{Cvertex@{Cvertex}!ui\+V\+E\+Rid\+\_\+vertex@{ui\+V\+E\+Rid\+\_\+vertex}}
+\index{ui\+V\+E\+Rid\+\_\+vertex@{ui\+V\+E\+Rid\+\_\+vertex}!Cvertex@{Cvertex}}
+\subsubsection[{ui\+V\+E\+Rid\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::ui\+V\+E\+Rid\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}\label{class_cvertex_ad10db8510c415314374789472f1436fc}
+
+
+Definition at line 21 of file Cvertex.\+h.
+
+\hypertarget{class_cvertex_aefb09bb4a45f00a7de925bb63d2291a7}{}\index{Cvertex@{Cvertex}!ui\+V\+E\+Rnb\+\_\+edges\+\_\+in@{ui\+V\+E\+Rnb\+\_\+edges\+\_\+in}}
+\index{ui\+V\+E\+Rnb\+\_\+edges\+\_\+in@{ui\+V\+E\+Rnb\+\_\+edges\+\_\+in}!Cvertex@{Cvertex}}
+\subsubsection[{ui\+V\+E\+Rnb\+\_\+edges\+\_\+in}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::ui\+V\+E\+Rnb\+\_\+edges\+\_\+in\hspace{0.3cm}{\ttfamily [private]}}\label{class_cvertex_aefb09bb4a45f00a7de925bb63d2291a7}
+
+
+Definition at line 27 of file Cvertex.\+h.
+
+\hypertarget{class_cvertex_a9b4b73496d3b28aef0912519d774572f}{}\index{Cvertex@{Cvertex}!ui\+V\+E\+Rnb\+\_\+edges\+\_\+out@{ui\+V\+E\+Rnb\+\_\+edges\+\_\+out}}
+\index{ui\+V\+E\+Rnb\+\_\+edges\+\_\+out@{ui\+V\+E\+Rnb\+\_\+edges\+\_\+out}!Cvertex@{Cvertex}}
+\subsubsection[{ui\+V\+E\+Rnb\+\_\+edges\+\_\+out}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cvertex\+::ui\+V\+E\+Rnb\+\_\+edges\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}\label{class_cvertex_a9b4b73496d3b28aef0912519d774572f}
+
+
+Definition at line 29 of file Cvertex.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cvertex_8h}{Cvertex.\+h}\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cvertex_8cpp}{Cvertex.\+cpp}\end{DoxyCompactItemize}

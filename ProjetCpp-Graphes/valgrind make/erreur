@@ -1,0 +1,91 @@
+==6791== Memcheck, a memory error detector
+==6791== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==6791== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==6791== Command: ../dist/Debug/GNU-Linux-x86/projetcpp_stable_linux ../Test_Files/in/graph4.txt
+==6791== 
+==6791== 
+==6791== HEAP SUMMARY:
+==6791==     in use at exit: 216 bytes in 36 blocks
+==6791==   total heap usage: 2,721 allocs, 2,685 frees, 260,734 bytes allocated
+==6791== 
+==6791== 12 (8 direct, 4 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403E4E: Cgraph::GRAremove_vertex_from_index(unsigned int) (Cgraph.cpp:517)
+==6791==    by 0x403FA3: Cgraph::GRAremove_vertex_from_vertex_id(unsigned int) (Cgraph.cpp:551)
+==6791==    by 0x404BFA: Cgraph::GRAdelete_vertex_pointed_by(unsigned int) (Cgraph.cpp:896)
+==6791==    by 0x407746: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:136)
+==6791==    by 0x4087BB: Cmax_inde_sets_table_UNIT::TEST_UNIT_GRTempty_table() (Cmax_inde_sets_table_UNIT.cpp:28)
+==6791==    by 0x40C5AF: main (main.cpp:66)
+==6791== 
+==6791== 12 (8 direct, 4 indirect) bytes in 1 blocks are definitely lost in loss record 8 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403E4E: Cgraph::GRAremove_vertex_from_index(unsigned int) (Cgraph.cpp:517)
+==6791==    by 0x403FA3: Cgraph::GRAremove_vertex_from_vertex_id(unsigned int) (Cgraph.cpp:551)
+==6791==    by 0x404BFA: Cgraph::GRAdelete_vertex_pointed_by(unsigned int) (Cgraph.cpp:896)
+==6791==    by 0x407746: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:136)
+==6791==    by 0x40891B: Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set() (Cmax_inde_sets_table_UNIT.cpp:54)
+==6791==    by 0x40C5B4: main (main.cpp:67)
+==6791== 
+==6791== 24 (16 direct, 8 indirect) bytes in 2 blocks are definitely lost in loss record 11 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403744: Cgraph::Cgraph(Cgraph const&) (Cgraph.cpp:208)
+==6791==    by 0x4075B8: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:94)
+==6791==    by 0x4087BB: Cmax_inde_sets_table_UNIT::TEST_UNIT_GRTempty_table() (Cmax_inde_sets_table_UNIT.cpp:28)
+==6791==    by 0x40C5AF: main (main.cpp:66)
+==6791== 
+==6791== 24 (16 direct, 8 indirect) bytes in 2 blocks are definitely lost in loss record 12 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403DF6: Cgraph::GRAremove_vertex_from_index(unsigned int) (Cgraph.cpp:512)
+==6791==    by 0x403FA3: Cgraph::GRAremove_vertex_from_vertex_id(unsigned int) (Cgraph.cpp:551)
+==6791==    by 0x404BFA: Cgraph::GRAdelete_vertex_pointed_by(unsigned int) (Cgraph.cpp:896)
+==6791==    by 0x407746: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:136)
+==6791==    by 0x4087BB: Cmax_inde_sets_table_UNIT::TEST_UNIT_GRTempty_table() (Cmax_inde_sets_table_UNIT.cpp:28)
+==6791==    by 0x40C5AF: main (main.cpp:66)
+==6791== 
+==6791== 24 (16 direct, 8 indirect) bytes in 2 blocks are definitely lost in loss record 13 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403744: Cgraph::Cgraph(Cgraph const&) (Cgraph.cpp:208)
+==6791==    by 0x4075B8: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:94)
+==6791==    by 0x40891B: Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set() (Cmax_inde_sets_table_UNIT.cpp:54)
+==6791==    by 0x40C5B4: main (main.cpp:67)
+==6791== 
+==6791== 24 (16 direct, 8 indirect) bytes in 2 blocks are definitely lost in loss record 14 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403DF6: Cgraph::GRAremove_vertex_from_index(unsigned int) (Cgraph.cpp:512)
+==6791==    by 0x403FA3: Cgraph::GRAremove_vertex_from_vertex_id(unsigned int) (Cgraph.cpp:551)
+==6791==    by 0x404BFA: Cgraph::GRAdelete_vertex_pointed_by(unsigned int) (Cgraph.cpp:896)
+==6791==    by 0x407746: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:136)
+==6791==    by 0x40891B: Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set() (Cmax_inde_sets_table_UNIT.cpp:54)
+==6791==    by 0x40C5B4: main (main.cpp:67)
+==6791== 
+==6791== 48 (32 direct, 16 indirect) bytes in 4 blocks are definitely lost in loss record 15 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403744: Cgraph::Cgraph(Cgraph const&) (Cgraph.cpp:208)
+==6791==    by 0x4077FD: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:149)
+==6791==    by 0x4087BB: Cmax_inde_sets_table_UNIT::TEST_UNIT_GRTempty_table() (Cmax_inde_sets_table_UNIT.cpp:28)
+==6791==    by 0x40C5AF: main (main.cpp:66)
+==6791== 
+==6791== 48 (32 direct, 16 indirect) bytes in 4 blocks are definitely lost in loss record 16 of 16
+==6791==    at 0x4C2B800: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6791==    by 0x408BED: Cvertex::Cvertex(Cvertex const&) (Cvertex.cpp:40)
+==6791==    by 0x403744: Cgraph::Cgraph(Cgraph const&) (Cgraph.cpp:208)
+==6791==    by 0x4077FD: Cmax_inde_sets_table::MITenum_max_inde_set(Cgraph*, Cgraph*) (Cmax_inde_sets_table.cpp:149)
+==6791==    by 0x40891B: Cmax_inde_sets_table_UNIT::TEST_UNIT_MITenum_max_inde_set() (Cmax_inde_sets_table_UNIT.cpp:54)
+==6791==    by 0x40C5B4: main (main.cpp:67)
+==6791== 
+==6791== LEAK SUMMARY:
+==6791==    definitely lost: 144 bytes in 18 blocks
+==6791==    indirectly lost: 72 bytes in 18 blocks
+==6791==      possibly lost: 0 bytes in 0 blocks
+==6791==    still reachable: 0 bytes in 0 blocks
+==6791==         suppressed: 0 bytes in 0 blocks
+==6791== 
+==6791== For counts of detected and suppressed errors, rerun with: -v
+==6791== ERROR SUMMARY: 8 errors from 8 contexts (suppressed: 0 from 0)

@@ -1,0 +1,480 @@
+\hypertarget{class_cgraph__table}{}\section{Cgraph\+\_\+table Class Reference}
+\label{class_cgraph__table}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+
+
+\hyperlink{class_cgraph__table}{Cgraph\+\_\+table} Class.  
+
+
+
+
+{\ttfamily \#include $<$Cgraph\+\_\+table.\+h$>$}
+
+Inheritance diagram for Cgraph\+\_\+table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cgraph__table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cgraph__table_aabb74d501db61369797903de6329fe87}{Cgraph\+\_\+table} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with null value. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph__table_a3449715030a5e9365b35554ad75d3919}{Cgraph\+\_\+table} (const \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \&Cgraph\+\_\+table\+\_\+to\+\_\+copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with the value of the one in parameter. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph__table_a8a3d1269cabe8a29d1b6e004e1a88a1b}{$\sim$\+Cgraph\+\_\+table} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: delete correctly a \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph__table_a6ac26aa9fbc81ea02cfec30a2062c4e3}{G\+R\+Tempty\+\_\+table} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove all the Graph in the \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$$\ast$ \hyperlink{class_cgraph__table_a2a00e51699671b8fc9788729b6ee8d51}{G\+R\+Tget\+\_\+graph\+\_\+table} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the table of graph. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_a9ad5111e2f01f7b18b289a828007d100}{G\+R\+Tget\+\_\+graph} (unsigned int ui\+Index)
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the graph at the index in the table. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph__table_a402ccf4db0c95c9aa0a2220734c3386f}{G\+R\+Tget\+\_\+nb\+\_\+graph} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the number of graph in the table. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph__table_aa2c4e7d9a6c2ec7c555d5f325208fc99}{G\+R\+Tadd\+\_\+graph} (\hyperlink{class_cgraph}{Cgraph} $\ast$p\+Graph)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add a graph to the table. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_a441f71c44ac878bcac4af61f7a096155}{G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index} (unsigned int ui\+Index)
+\begin{DoxyCompactList}\small\item\em Purpose\+: delete a graph at the specified position. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph__table_a047848af6b236a03c66da886a0a35d05}{G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index} (unsigned int ui\+Index, \hyperlink{class_cgraph}{Cgraph} $\ast$p\+Cgraph\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Purpose\+: insert a graph at the position in parameter. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_af6e3a18e66cff9421ee94e08e77bb30c}{G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index} (unsigned int ui\+Index, \hyperlink{class_cgraph}{Cgraph} $\ast$p\+Cgraph\+\_\+to\+\_\+add)
+\begin{DoxyCompactList}\small\item\em Purpose\+: replace the graph at the index by the one in parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph__table_a3710eca1f83462c7e297856cfdf4704b}{G\+R\+Tprint} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: print the independant sets. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \& \hyperlink{class_cgraph__table_adf1965acc4d5d0b355eb4b86e375223f}{operator=} (const \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \&graph\+\_\+table\+\_\+to\+\_\+copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: set the value of a graph table with equal operator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph__table_a6a85919582df0a578740405744072229}{operator==} (\hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \&graph\+\_\+table\+\_\+to\+\_\+compare) const 
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two graph table. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph__table_aaaeda8063b2da6052a7a3c482337d793}{operator!=} (\hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \&graph\+\_\+table\+\_\+to\+\_\+compare) const 
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two graph table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$$\ast$ \hyperlink{class_cgraph__table_a0aa721f87c50e553fe2d7ff8a23d1673}{pp\+G\+R\+Tgraph\+\_\+table}
+\item 
+unsigned int \hyperlink{class_cgraph__table_a87fbe4f547d5fa7b94697ba7b1fedc66}{ui\+G\+R\+Tnb\+\_\+graph}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_cgraph__table}{Cgraph\+\_\+table} Class. 
+
+Definition at line 14 of file Cgraph\+\_\+table.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cgraph__table_aabb74d501db61369797903de6329fe87}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{Cgraph\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+\_\+table\+::\+Cgraph\+\_\+table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_aabb74d501db61369797903de6329fe87}
+
+
+Purpose\+: create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with null value. 
+
+\hyperlink{class_cgraph__table_aabb74d501db61369797903de6329fe87}{Cgraph\+\_\+table()} -\/ create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with null value
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a3449715030a5e9365b35554ad75d3919}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{Cgraph\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+\_\+table\+::\+Cgraph\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cgraph\+\_\+table} \&}]{Cgraph\+\_\+table\+\_\+to\+\_\+copy}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a3449715030a5e9365b35554ad75d3919}
+
+
+Purpose\+: create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with the value of the one in parameter. 
+
+\hyperlink{class_cgraph__table_a3449715030a5e9365b35554ad75d3919}{Cgraph\+\_\+table(const Cgraph\+\_\+table \& Cgraph\+\_\+table\+\_\+to\+\_\+copy)} -\/ create a new \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} with the value of the one in parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cgraph__table}{Cgraph\+\_\+table} \& Cgraph\+\_\+table\+\_\+to\+\_\+copy -\/ the graph to copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a8a3d1269cabe8a29d1b6e004e1a88a1b}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!````~Cgraph\+\_\+table@{$\sim$\+Cgraph\+\_\+table}}
+\index{````~Cgraph\+\_\+table@{$\sim$\+Cgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{$\sim$\+Cgraph\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+\_\+table\+::$\sim$\+Cgraph\+\_\+table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a8a3d1269cabe8a29d1b6e004e1a88a1b}
+
+
+Purpose\+: delete correctly a \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}. 
+
+\hyperlink{class_cgraph__table_a8a3d1269cabe8a29d1b6e004e1a88a1b}{$\sim$\+Cgraph\+\_\+table()} -\/ delete correctly a \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Cgraph\+\_\+table.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cgraph__table_a441f71c44ac878bcac4af61f7a096155}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index}}
+\index{G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} $\ast$ Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a441f71c44ac878bcac4af61f7a096155}
+
+
+Purpose\+: delete a graph at the specified position. 
+
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_a441f71c44ac878bcac4af61f7a096155}{Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+delete\+\_\+graph\+\_\+at\+\_\+index(unsigned int ui\+Index)} -\/ delete a graph at the specified position
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index -\/ index of the graph to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cgraph}{Cgraph} $\ast$ -\/ the graph who will be removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if index is outofbound \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 191 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a047848af6b236a03c66da886a0a35d05}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index}}
+\index{G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index, }
+\item[{{\bf Cgraph} $\ast$}]{p\+Cgraph\+\_\+to\+\_\+add}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a047848af6b236a03c66da886a0a35d05}
+
+
+Purpose\+: insert a graph at the position in parameter. 
+
+void \hyperlink{class_cgraph__table_a047848af6b236a03c66da886a0a35d05}{Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+insert\+\_\+graph\+\_\+at\+\_\+index(unsigned int ui\+Index, Cgraph $\ast$ p\+Cgraph\+\_\+to\+\_\+add)} -\/ insert a graph at the position in parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index -\/ index of the graph to be inserted \hyperlink{class_cgraph}{Cgraph} $\ast$ p\+Graph -\/ graph to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cgraph}{Cgraph} $\ast$ -\/ the graph who will be removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if index is outofbound \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 244 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_af6e3a18e66cff9421ee94e08e77bb30c}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index}}
+\index{G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index@{G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} $\ast$ Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index, }
+\item[{{\bf Cgraph} $\ast$}]{p\+Cgraph\+\_\+to\+\_\+add}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_af6e3a18e66cff9421ee94e08e77bb30c}
+
+
+Purpose\+: replace the graph at the index by the one in parameter. 
+
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_af6e3a18e66cff9421ee94e08e77bb30c}{Cgraph\+\_\+table\+::\+G\+R\+T\+\_\+replace\+\_\+graph\+\_\+at\+\_\+index(unsigned int ui\+Index, Cgraph $\ast$ p\+Graph)} -\/ replace the graph at the index by the one in parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index -\/ index of the graph to be replaced \hyperlink{class_cgraph}{Cgraph} $\ast$ p\+Graph -\/ graph to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cgraph}{Cgraph} $\ast$ -\/ the graph who will be removed, null if the index is outofbound 
+\end{DoxyReturn}
+
+
+Definition at line 295 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_aa2c4e7d9a6c2ec7c555d5f325208fc99}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tadd\+\_\+graph@{G\+R\+Tadd\+\_\+graph}}
+\index{G\+R\+Tadd\+\_\+graph@{G\+R\+Tadd\+\_\+graph}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tadd\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+\_\+table\+::\+G\+R\+Tadd\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{{\bf Cgraph} $\ast$}]{p\+Graph}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_aa2c4e7d9a6c2ec7c555d5f325208fc99}
+
+
+Purpose\+: add a graph to the table. 
+
+void \hyperlink{class_cgraph__table_aa2c4e7d9a6c2ec7c555d5f325208fc99}{G\+R\+Tadd\+\_\+graph(\+Cgraph $\ast$ p\+Graph)} -\/ add a graph to the table
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cgraph}{Cgraph}} & $\ast$ p\+Graph -\/ the graph to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a6ac26aa9fbc81ea02cfec30a2062c4e3}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tempty\+\_\+table@{G\+R\+Tempty\+\_\+table}}
+\index{G\+R\+Tempty\+\_\+table@{G\+R\+Tempty\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tempty\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+\_\+table\+::\+G\+R\+Tempty\+\_\+table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a6ac26aa9fbc81ea02cfec30a2062c4e3}
+
+
+Purpose\+: remove all the Graph in the \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}. 
+
+void \hyperlink{class_cgraph__table_a6ac26aa9fbc81ea02cfec30a2062c4e3}{G\+R\+Tempty\+\_\+table()} -\/ remove all the Graph in the \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a9ad5111e2f01f7b18b289a828007d100}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tget\+\_\+graph@{G\+R\+Tget\+\_\+graph}}
+\index{G\+R\+Tget\+\_\+graph@{G\+R\+Tget\+\_\+graph}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tget\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} $\ast$ Cgraph\+\_\+table\+::\+G\+R\+Tget\+\_\+graph (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a9ad5111e2f01f7b18b289a828007d100}
+
+
+Purpose\+: get the graph at the index in the table. 
+
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_a9ad5111e2f01f7b18b289a828007d100}{G\+R\+Tget\+\_\+graph(unsigned int ui\+Index)} -\/ get the graph at the index
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a2a00e51699671b8fc9788729b6ee8d51}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tget\+\_\+graph\+\_\+table@{G\+R\+Tget\+\_\+graph\+\_\+table}}
+\index{G\+R\+Tget\+\_\+graph\+\_\+table@{G\+R\+Tget\+\_\+graph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tget\+\_\+graph\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} $\ast$$\ast$ Cgraph\+\_\+table\+::\+G\+R\+Tget\+\_\+graph\+\_\+table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a2a00e51699671b8fc9788729b6ee8d51}
+
+
+Purpose\+: get the table of graph. 
+
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph__table_a2a00e51699671b8fc9788729b6ee8d51}{G\+R\+Tget\+\_\+graph\+\_\+table()} -\/ get the table of graph at the index
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a402ccf4db0c95c9aa0a2220734c3386f}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tget\+\_\+nb\+\_\+graph@{G\+R\+Tget\+\_\+nb\+\_\+graph}}
+\index{G\+R\+Tget\+\_\+nb\+\_\+graph@{G\+R\+Tget\+\_\+nb\+\_\+graph}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tget\+\_\+nb\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+\_\+table\+::\+G\+R\+Tget\+\_\+nb\+\_\+graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a402ccf4db0c95c9aa0a2220734c3386f}
+
+
+Purpose\+: get the number of graph in the table. 
+
+unsigned int \hyperlink{class_cgraph__table_a402ccf4db0c95c9aa0a2220734c3386f}{G\+R\+Tget\+\_\+nb\+\_\+graph()} -\/ get the number of graph in the table
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index -\/ the index of the graph to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ the number of graph 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a3710eca1f83462c7e297856cfdf4704b}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!G\+R\+Tprint@{G\+R\+Tprint}}
+\index{G\+R\+Tprint@{G\+R\+Tprint}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{G\+R\+Tprint}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+\_\+table\+::\+G\+R\+Tprint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_a3710eca1f83462c7e297856cfdf4704b}
+
+
+Purpose\+: print the independant sets. 
+
+void \hyperlink{class_cgraph__table_a3710eca1f83462c7e297856cfdf4704b}{G\+R\+Tprint()} -\/ print the independant sets
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 320 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_aaaeda8063b2da6052a7a3c482337d793}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+\_\+table\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Cgraph\+\_\+table} \&}]{graph\+\_\+table\+\_\+to\+\_\+compare}
+\end{DoxyParamCaption}
+) const}\label{class_cgraph__table_aaaeda8063b2da6052a7a3c482337d793}
+
+
+Purpose\+: compare two graph table. 
+
+bool Cgraph\+\_\+table\+::operator!=(\+Cgraph \&graph\+To\+Compare)const -\/ compare two graph table
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}} & \& graph\+\_\+table\+\_\+to\+\_\+compare -\/ the graph table to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the two graph\+\_\+table are different 
+\end{DoxyReturn}
+
+
+Definition at line 413 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_adf1965acc4d5d0b355eb4b86e375223f}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!operator=@{operator=}}
+\index{operator=@{operator=}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph\+\_\+table} \& Cgraph\+\_\+table\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cgraph\+\_\+table} \&}]{graph\+\_\+table\+\_\+to\+\_\+copy}
+\end{DoxyParamCaption}
+)}\label{class_cgraph__table_adf1965acc4d5d0b355eb4b86e375223f}
+
+
+Purpose\+: set the value of a graph table with equal operator. 
+
+\hyperlink{class_cgraph}{Cgraph} \& Cgraph\+\_\+table\+::operator=(const Cgraph \&graph\+\_\+to\+\_\+copy) -\/ set the value of a graph table with equal operator
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cgraph}{Cgraph} \& graph\+\_\+table\+\_\+to\+\_\+copy -\/ the graph table to copy (use to set the value)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 341 of file Cgraph\+\_\+table.\+cpp.
+
+\hypertarget{class_cgraph__table_a6a85919582df0a578740405744072229}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!operator==@{operator==}}
+\index{operator==@{operator==}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+\_\+table\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Cgraph\+\_\+table} \&}]{graph\+\_\+table\+\_\+to\+\_\+compare}
+\end{DoxyParamCaption}
+) const}\label{class_cgraph__table_a6a85919582df0a578740405744072229}
+
+
+Purpose\+: compare two graph table. 
+
+bool Cgraph\+\_\+table\+::operator==(\+Cgraph \&graph\+To\+Compare)const -\/ compare two graph table
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cgraph__table}{Cgraph\+\_\+table}} & \& graph\+\_\+table\+\_\+to\+\_\+compare -\/ the graph table to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the two graphe\+\_\+table are equal 
+\end{DoxyReturn}
+
+
+Definition at line 370 of file Cgraph\+\_\+table.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_cgraph__table_a0aa721f87c50e553fe2d7ff8a23d1673}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!pp\+G\+R\+Tgraph\+\_\+table@{pp\+G\+R\+Tgraph\+\_\+table}}
+\index{pp\+G\+R\+Tgraph\+\_\+table@{pp\+G\+R\+Tgraph\+\_\+table}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{pp\+G\+R\+Tgraph\+\_\+table}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph}$\ast$$\ast$ Cgraph\+\_\+table\+::pp\+G\+R\+Tgraph\+\_\+table\hspace{0.3cm}{\ttfamily [private]}}\label{class_cgraph__table_a0aa721f87c50e553fe2d7ff8a23d1673}
+
+
+Definition at line 18 of file Cgraph\+\_\+table.\+h.
+
+\hypertarget{class_cgraph__table_a87fbe4f547d5fa7b94697ba7b1fedc66}{}\index{Cgraph\+\_\+table@{Cgraph\+\_\+table}!ui\+G\+R\+Tnb\+\_\+graph@{ui\+G\+R\+Tnb\+\_\+graph}}
+\index{ui\+G\+R\+Tnb\+\_\+graph@{ui\+G\+R\+Tnb\+\_\+graph}!Cgraph\+\_\+table@{Cgraph\+\_\+table}}
+\subsubsection[{ui\+G\+R\+Tnb\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+\_\+table\+::ui\+G\+R\+Tnb\+\_\+graph\hspace{0.3cm}{\ttfamily [private]}}\label{class_cgraph__table_a87fbe4f547d5fa7b94697ba7b1fedc66}
+
+
+Definition at line 19 of file Cgraph\+\_\+table.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cgraph__table_8h}{Cgraph\+\_\+table.\+h}\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cgraph__table_8cpp}{Cgraph\+\_\+table.\+cpp}\end{DoxyCompactItemize}

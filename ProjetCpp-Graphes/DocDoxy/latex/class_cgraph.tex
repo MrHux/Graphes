@@ -1,0 +1,1145 @@
+\hypertarget{class_cgraph}{}\section{Cgraph Class Reference}
+\label{class_cgraph}\index{Cgraph@{Cgraph}}
+
+
+\hyperlink{class_cgraph}{Cgraph} Class.  
+
+
+
+
+{\ttfamily \#include $<$Cgraph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cgraph_a74d074e30dd30bc9e3b716625db2f4ad}{Cgraph} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with null value. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph_a0d1eda0e60f9f1b250d18c62b93cb504}{Cgraph} (\hyperlink{class_cvertex}{Cvertex} $\ast$$\ast$pp\+List\+\_\+vertex, unsigned int ui\+Nb\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with param values. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph_aa6445aefea2874d90491eee41d976344}{Cgraph} (const char $\ast$pc\+File\+\_\+to\+\_\+import)  throw (\+Cexception)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with the content of a file. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph_abcc19e43315769e940188eff5e22f573}{Cgraph} (const \hyperlink{class_cgraph}{Cgraph} \&graph\+\_\+to\+\_\+copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a \hyperlink{class_cgraph}{Cgraph} with the value of another \hyperlink{class_cgraph}{Cgraph}. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph_a7774b2533a3ee856fe413a985f031fee}{Cgraph} (unsigned int ui\+Nb\+\_\+vertex, bool b\+Is\+\_\+oriented, unsigned int i\+Nb\+\_\+edges)
+\begin{DoxyCompactList}\small\item\em Purpose\+: create a Random \hyperlink{class_cgraph}{Cgraph} with the specified number of vertex and edge could be oriented or not as wanted. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph_a20b1521fb3c2d02f67ae9a2cf687ed19}{$\sim$\+Cgraph} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: delete a \hyperlink{class_cgraph}{Cgraph} correctly. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_ad5d926acb99a83858b7c0c20adb95137}{G\+R\+Aget\+\_\+nb\+\_\+vertex} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the number of vertex of the graph. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_a317569fc6dc73d446dd54cdc0e1776f4}{G\+R\+Aget\+\_\+nb\+\_\+edges} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the number of edges of the graph. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$$\ast$ \hyperlink{class_cgraph_a543db6d2f65b8cba2ffc9598ef0d3ed7}{G\+R\+Aget\+\_\+vertices} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the list of vertex of the graph. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_a1b15e9506308eba5fe9f19b6d73818af}{G\+R\+Aget\+\_\+index\+\_\+vertex} (unsigned int ui\+Id\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the index of the vertex designed by the ui\+Id\+\_\+vertex in the list of the graph. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_a6e595072fdc97916238d46273e812711}{G\+R\+Aget\+\_\+index\+\_\+vertex} (\hyperlink{class_cvertex}{Cvertex} $\ast$p\+Vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the index of the vertex pointed by p\+Vertex in the list of the graph. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$ \hyperlink{class_cgraph_aca872915fd8745ae14ba41afbb0dec0a}{G\+R\+Aget\+\_\+vertex} (unsigned int ui\+Id\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the vertex at the index in param. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$ \hyperlink{class_cgraph_a773062af5c90eb8b3caf083265b1fefe}{G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Vertex\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Purpose\+: get the vertex at the id in param. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_ac23521c4babdef352f7a88321032a7ec}{G\+R\+Aadd\+\_\+vertex} (\hyperlink{class_cvertex}{Cvertex} $\ast$p\+Vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add a vertex to the graph (if the vertex is already there it\textquotesingle{}s not added, but it\textquotesingle{}s position is returned) \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$ \hyperlink{class_cgraph_a476c5213ccd669ce475c6a148aa27331}{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Id\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove a vertex of the graph. \end{DoxyCompactList}\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$ \hyperlink{class_cgraph_a51f8ab13bb01858f05058fbcb9be0cef}{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index} (unsigned int ui\+Index\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove a vertex of the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a7a57ff55a576088f502830da3234c685}{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index} (unsigned int ui\+Index\+\_\+vertex, \hyperlink{class_cvertex}{Cvertex} $\ast$p\+Vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: update a vertex of the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a902a9ad6561b0f4d5683a4778377461b}{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Id\+\_\+vertex, \hyperlink{class_cvertex}{Cvertex} $\ast$p\+Vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: update a vertex of the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a43c280add746a2aee6d6c09435d8da00}{G\+R\+Aprint} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: print to screen the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_ac0f9c28d05f4ce98521d2a859fd5f540}{G\+R\+Aprint} (char $\ast$p\+Option)
+\begin{DoxyCompactList}\small\item\em Purpose\+: print to screen the graph, you can use option to have different view. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a0be43dbf3a34b9ed7161dd11d81ba9a3}{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index} (unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a399bfe930e7d73dff66fd9cc7321b8ba}{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index} (unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: update an edge in the graph. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph_a1154ecf975f57d2eecf7dbcabe850abf}{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index} (unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add an edge in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_af9de5664a44cdfbca02f33c9dc45c18e}{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Id\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: remove an edge in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_aad67e71da6fa688645f7c3dfbb156c8f}{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Id\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+vertex\+\_\+in, unsigned int ui\+Id\+\_\+new\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+new\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: update an edge in the graph. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph_ab965ddccededf53171639d0d229c6b79}{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id} (unsigned int ui\+Id\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+vertex\+\_\+in)
+\begin{DoxyCompactList}\small\item\em Purpose\+: add an edge in the graph. \end{DoxyCompactList}\item 
+\hyperlink{class_cgraph}{Cgraph} $\ast$ \hyperlink{class_cgraph_a8ae7eecc9e395ed8a6a893d23244d82a}{G\+R\+Ainvert\+\_\+all\+\_\+edges} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: invert all edges in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a153be02e272b2308fe097771f6f2ac37}{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by} (unsigned int ui\+Vertex\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Remove all the vertex who share a common edge goind out of the vertex who has the id in parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_ac6bbe71db254913ee34eebe42253eb41}{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point} (unsigned int ui\+Vertex\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Remove all the vertex who share a common edge who point the vertex who has the id in parameter. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_ab25a1c2907cf1329916ecaa4a793016e}{G\+R\+Aorder\+\_\+by\+\_\+degree} (char c\+Option)
+\begin{DoxyCompactList}\small\item\em Purpose\+: order the vertices of the graph by their degree. \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a5df435955743266a7b9d9f7fa8158184}{G\+R\+Aorder\+\_\+by\+\_\+degree} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: order the vertices of the graph by their degree (increasing sort) \end{DoxyCompactList}\item 
+void \hyperlink{class_cgraph_a8d76681a65dead8a7b9f04ee07b64a81}{G\+R\+Aorder\+\_\+by\+\_\+id} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: order the vertices of the graph by their id (increasing sort) \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph_a145aba32956baffe1ffd764d66eb3666}{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity} ()
+\begin{DoxyCompactList}\small\item\em Purpose\+: verify if a graph is only composed by community, a community is a set of vertex who can be split into strong connexe graph. for exemple \+: \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_aecad66530e50f2bd52cf8bf1fc7fdc05}{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor} (unsigned int ui\+Index\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em Purpose\+: Count the number of edge of the successors of a vertex. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_cgraph_a5f237cd690b3ae91a44d09faff9b4090}{G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor} ()
+\item 
+\hyperlink{class_cgraph}{Cgraph} \& \hyperlink{class_cgraph_a324c43b3a1df7ae07d2b135550544527}{operator=} (const \hyperlink{class_cgraph}{Cgraph} \&graph\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em Purpose\+: set the value of a graph with equal operator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph_a1ee349de0e5cfd1ae0c4f72f4ad23900}{operator==} (\hyperlink{class_cgraph}{Cgraph} \&graph\+To\+Compare) const 
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two graph. \end{DoxyCompactList}\item 
+bool \hyperlink{class_cgraph_a5e3465861c0ab322fb4dbf6d19ee3f28}{operator!=} (\hyperlink{class_cgraph}{Cgraph} \&graph\+To\+Compare) const 
+\begin{DoxyCompactList}\small\item\em Purpose\+: compare two graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cvertex}{Cvertex} $\ast$$\ast$ \hyperlink{class_cgraph_aa0f349450a7e93bb80beea0d28b4fb0c}{pp\+G\+R\+Alist\+\_\+vertex}
+\item 
+unsigned int \hyperlink{class_cgraph_af86fdbce68779def5a1803c609567860}{ui\+G\+R\+Anb\+\_\+vertex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_cgraph}{Cgraph} Class. 
+
+Definition at line 20 of file Cgraph.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cgraph_a74d074e30dd30bc9e3b716625db2f4ad}{}\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::\+Cgraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a74d074e30dd30bc9e3b716625db2f4ad}
+
+
+Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with null value. 
+
+\hyperlink{class_cgraph_a74d074e30dd30bc9e3b716625db2f4ad}{Cgraph()} -\/ create a new \hyperlink{class_cgraph}{Cgraph} with null value
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a0d1eda0e60f9f1b250d18c62b93cb504}{}\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::\+Cgraph (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} $\ast$$\ast$}]{pp\+List\+\_\+vertex, }
+\item[{unsigned int}]{ui\+Nb\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a0d1eda0e60f9f1b250d18c62b93cb504}
+
+
+Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with param values. 
+
+\hyperlink{class_cgraph_a0d1eda0e60f9f1b250d18c62b93cb504}{Cgraph(\+Cvertex$\ast$$\ast$ pp\+List\+\_\+vertex, unsigned int ui\+Nb\+\_\+vertex)} -\/ create a new \hyperlink{class_cgraph}{Cgraph} with param values
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cvertex$\ast$$\ast$} & pp\+List\+\_\+vertex -\/ the list of vertex to set unsigned int ui\+Nb\+\_\+vertex -\/ the number of vertex in the list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_aa6445aefea2874d90491eee41d976344}{}\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::\+Cgraph (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{pc\+File\+\_\+to\+\_\+import}
+\end{DoxyParamCaption}
+) throw  {\bf Cexception}) }\label{class_cgraph_aa6445aefea2874d90491eee41d976344}
+
+
+Purpose\+: create a new \hyperlink{class_cgraph}{Cgraph} with the content of a file. 
+
+\hyperlink{class_cgraph_aa6445aefea2874d90491eee41d976344}{Cgraph(const char$\ast$ pc\+File\+\_\+to\+\_\+import)} -\/ create a new \hyperlink{class_cgraph}{Cgraph} with the content of a file
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char$\ast$ pc\+File\+\_\+to\+\_\+import -\/ the path to the file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_abcc19e43315769e940188eff5e22f573}{}\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::\+Cgraph (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cgraph} \&}]{graph\+\_\+to\+\_\+copy}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_abcc19e43315769e940188eff5e22f573}
+
+
+Purpose\+: create a \hyperlink{class_cgraph}{Cgraph} with the value of another \hyperlink{class_cgraph}{Cgraph}. 
+
+\hyperlink{class_cgraph_abcc19e43315769e940188eff5e22f573}{Cgraph(const Cgraph \&graph\+\_\+to\+\_\+copy)} -\/ create a \hyperlink{class_cgraph}{Cgraph} with the value of another \hyperlink{class_cgraph}{Cgraph}
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cgraph}{Cgraph} \& graph\+\_\+to\+\_\+copy -\/ the graph to copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a7774b2533a3ee856fe413a985f031fee}{}\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\index{Cgraph@{Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::\+Cgraph (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Nb\+\_\+vertex, }
+\item[{bool}]{b\+Is\+\_\+oriented, }
+\item[{unsigned int}]{i\+Nb\+\_\+edges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_cgraph_a7774b2533a3ee856fe413a985f031fee}
+
+
+Purpose\+: create a Random \hyperlink{class_cgraph}{Cgraph} with the specified number of vertex and edge could be oriented or not as wanted. 
+
+\hyperlink{class_cgraph_abcc19e43315769e940188eff5e22f573}{Cgraph(const Cgraph \&graph\+\_\+to\+\_\+copy)} -\/ create a random \hyperlink{class_cgraph}{Cgraph} under certain condition
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Nb\+\_\+vertex -\/ the number of vertex bool b\+Is\+\_\+oriented -\/ the kind of graph oriented or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 258 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a20b1521fb3c2d02f67ae9a2cf687ed19}{}\index{Cgraph@{Cgraph}!````~Cgraph@{$\sim$\+Cgraph}}
+\index{````~Cgraph@{$\sim$\+Cgraph}!Cgraph@{Cgraph}}
+\subsubsection[{$\sim$\+Cgraph}]{\setlength{\rightskip}{0pt plus 5cm}Cgraph\+::$\sim$\+Cgraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a20b1521fb3c2d02f67ae9a2cf687ed19}
+
+
+Purpose\+: delete a \hyperlink{class_cgraph}{Cgraph} correctly. 
+
+Cgraph$\sim$() -\/ delete a \hyperlink{class_cgraph}{Cgraph} correctly
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cgraph}{Cgraph} \& graph\+\_\+to\+\_\+copy -\/ the graph to copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 317 of file Cgraph.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cgraph_a1154ecf975f57d2eecf7dbcabe850abf}{}\index{Cgraph@{Cgraph}!G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index}}
+\index{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+::\+G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a1154ecf975f57d2eecf7dbcabe850abf}
+
+
+Purpose\+: add an edge in the graph. 
+
+\hyperlink{class_cgraph_a1154ecf975f57d2eecf7dbcabe850abf}{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+index(unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in)} -\/ add an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the index (in the list of the graph) of the vertex in entry of the edge unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the index (in the list of the graph) of the vertex in exit of the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ a boolean if the edge was already there
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 810 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ab965ddccededf53171639d0d229c6b79}{}\index{Cgraph@{Cgraph}!G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+::\+G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ab965ddccededf53171639d0d229c6b79}
+
+
+Purpose\+: add an edge in the graph. 
+
+\hyperlink{class_cgraph_ab965ddccededf53171639d0d229c6b79}{G\+R\+Aadd\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id(unsigned int ui\+Id\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+vertex\+\_\+in)} -\/ add an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the id of the vertex in entry of the edge unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the id of the vertex in exit of the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ a boolean if the edge was already there
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 892 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ac23521c4babdef352f7a88321032a7ec}{}\index{Cgraph@{Cgraph}!G\+R\+Aadd\+\_\+vertex@{G\+R\+Aadd\+\_\+vertex}}
+\index{G\+R\+Aadd\+\_\+vertex@{G\+R\+Aadd\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aadd\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aadd\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} $\ast$}]{p\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ac23521c4babdef352f7a88321032a7ec}
+
+
+Purpose\+: add a vertex to the graph (if the vertex is already there it\textquotesingle{}s not added, but it\textquotesingle{}s position is returned) 
+
+\hyperlink{class_cgraph_ac23521c4babdef352f7a88321032a7ec}{G\+R\+Aadd\+\_\+vertex(\+Cvertex$\ast$ p\+Vertex)} -\/ add a vertex to the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cvertex$\ast$} & p\+Vertex -\/ the vertex to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ the position of the vertex 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_aecad66530e50f2bd52cf8bf1fc7fdc05}{}\index{Cgraph@{Cgraph}!G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor@{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}}
+\index{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor@{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_aecad66530e50f2bd52cf8bf1fc7fdc05}
+
+
+Purpose\+: Count the number of edge of the successors of a vertex. 
+
+unsigned int \hyperlink{class_cgraph_aecad66530e50f2bd52cf8bf1fc7fdc05}{G\+R\+Acount\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor(unsigned int ui\+Index\+\_\+vertex)} -\/ Count the number of edge of the successors of a vertex
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex -\/ index of the vertex we want to look at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ the number of edge of the successors 
+\end{DoxyReturn}
+
+
+Definition at line 1119 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a153be02e272b2308fe097771f6f2ac37}{}\index{Cgraph@{Cgraph}!G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by@{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by}}
+\index{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by@{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Vertex\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a153be02e272b2308fe097771f6f2ac37}
+
+
+Purpose\+: Remove all the vertex who share a common edge goind out of the vertex who has the id in parameter. 
+
+\hyperlink{class_cgraph_a153be02e272b2308fe097771f6f2ac37}{G\+R\+Adelete\+\_\+vertex\+\_\+pointed\+\_\+by(unsigned int ui\+Vertex\+\_\+id)} -\/ delete the vertex pointed by the one in parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Vertex\+\_\+id -\/ the id of the vertex who start the edge(s)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 938 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ac6bbe71db254913ee34eebe42253eb41}{}\index{Cgraph@{Cgraph}!G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point@{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point}}
+\index{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point@{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Vertex\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ac6bbe71db254913ee34eebe42253eb41}
+
+
+Purpose\+: Remove all the vertex who share a common edge who point the vertex who has the id in parameter. 
+
+void \hyperlink{class_cgraph_ac6bbe71db254913ee34eebe42253eb41}{G\+R\+Adelete\+\_\+vertex\+\_\+who\+\_\+point(unsigned int ui\+Vertex\+\_\+id)} -\/ delete all the vertex who share an edge going to the one in parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Vertex\+\_\+id -\/ the id of the vertex who end the edge(s)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 965 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a1b15e9506308eba5fe9f19b6d73818af}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+index\+\_\+vertex@{G\+R\+Aget\+\_\+index\+\_\+vertex}}
+\index{G\+R\+Aget\+\_\+index\+\_\+vertex@{G\+R\+Aget\+\_\+index\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+index\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aget\+\_\+index\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a1b15e9506308eba5fe9f19b6d73818af}
+
+
+Purpose\+: get the index of the vertex designed by the ui\+Id\+\_\+vertex in the list of the graph. 
+
+\hyperlink{class_cgraph_a1b15e9506308eba5fe9f19b6d73818af}{G\+R\+Aget\+\_\+index\+\_\+vertex(unsigned int ui\+Id\+\_\+vertex)} -\/ get the index of the vertex in the list of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex -\/ the id of the vertex to find\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ if the vertex is in the graph return his own index in the list of vertex, otherwise return the maximun number who can be set in an unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line 383 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a6e595072fdc97916238d46273e812711}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+index\+\_\+vertex@{G\+R\+Aget\+\_\+index\+\_\+vertex}}
+\index{G\+R\+Aget\+\_\+index\+\_\+vertex@{G\+R\+Aget\+\_\+index\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+index\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aget\+\_\+index\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Cvertex} $\ast$}]{p\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a6e595072fdc97916238d46273e812711}
+
+
+Purpose\+: get the index of the vertex pointed by p\+Vertex in the list of the graph. 
+
+\hyperlink{class_cgraph_a6e595072fdc97916238d46273e812711}{G\+R\+Aget\+\_\+index\+\_\+vertex(\+Cvertex $\ast$ p\+Vertex)} -\/ get the index of the vertex in the list of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cvertex}{Cvertex}} & $\ast$ p\+Vertex -\/ a pointer on a Vertex to find\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unsigned int -\/ if the vertex is in the graph return his own index in the list of vertex, otherwise return the maximun number who can be set in an unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line 405 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a5f237cd690b3ae91a44d09faff9b4090}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor@{G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}}
+\index{G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor@{G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aget\+\_\+max\+\_\+nb\+\_\+edge\+\_\+of\+\_\+successor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a5f237cd690b3ae91a44d09faff9b4090}
+Not used ! 
+
+Definition at line 1136 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a317569fc6dc73d446dd54cdc0e1776f4}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+nb\+\_\+edges@{G\+R\+Aget\+\_\+nb\+\_\+edges}}
+\index{G\+R\+Aget\+\_\+nb\+\_\+edges@{G\+R\+Aget\+\_\+nb\+\_\+edges}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+nb\+\_\+edges}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aget\+\_\+nb\+\_\+edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a317569fc6dc73d446dd54cdc0e1776f4}
+
+
+Purpose\+: get the number of edges of the graph. 
+
+\hyperlink{class_cgraph_a317569fc6dc73d446dd54cdc0e1776f4}{G\+R\+Aget\+\_\+nb\+\_\+edges()} -\/ get the number of edges of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 460 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ad5d926acb99a83858b7c0c20adb95137}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+nb\+\_\+vertex@{G\+R\+Aget\+\_\+nb\+\_\+vertex}}
+\index{G\+R\+Aget\+\_\+nb\+\_\+vertex@{G\+R\+Aget\+\_\+nb\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+nb\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::\+G\+R\+Aget\+\_\+nb\+\_\+vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ad5d926acb99a83858b7c0c20adb95137}
+
+
+Purpose\+: get the number of vertex of the graph. 
+
+\hyperlink{class_cgraph_ad5d926acb99a83858b7c0c20adb95137}{G\+R\+Aget\+\_\+nb\+\_\+vertex()} -\/ get the number of vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 346 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_aca872915fd8745ae14ba41afbb0dec0a}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+vertex@{G\+R\+Aget\+\_\+vertex}}
+\index{G\+R\+Aget\+\_\+vertex@{G\+R\+Aget\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} $\ast$ Cgraph\+::\+G\+R\+Aget\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_aca872915fd8745ae14ba41afbb0dec0a}
+
+
+Purpose\+: get the vertex at the index in param. 
+
+\hyperlink{class_cgraph_aca872915fd8745ae14ba41afbb0dec0a}{G\+R\+Aget\+\_\+vertex(unsigned int ui\+Index\+\_\+vertex)} -\/ get the vertex at the index in param
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex -\/ the index (in the list of the graph) of the vertex to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ the vertex
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em throw} & an exception if the index is higher than the number of vertex in the graph \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 430 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a773062af5c90eb8b3caf083265b1fefe}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} $\ast$ Cgraph\+::\+G\+R\+Aget\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Vertex\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a773062af5c90eb8b3caf083265b1fefe}
+
+
+Purpose\+: get the vertex at the id in param. 
+
+\hyperlink{class_cgraph_aca872915fd8745ae14ba41afbb0dec0a}{G\+R\+Aget\+\_\+vertex(unsigned int ui\+Index\+\_\+vertex)} -\/ get the vertex at the id in param
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Vertex\+\_\+id -\/ the id of the vertex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ the vertex 
+\end{DoxyReturn}
+
+
+Definition at line 455 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a543db6d2f65b8cba2ffc9598ef0d3ed7}{}\index{Cgraph@{Cgraph}!G\+R\+Aget\+\_\+vertices@{G\+R\+Aget\+\_\+vertices}}
+\index{G\+R\+Aget\+\_\+vertices@{G\+R\+Aget\+\_\+vertices}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aget\+\_\+vertices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} $\ast$$\ast$ Cgraph\+::\+G\+R\+Aget\+\_\+vertices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a543db6d2f65b8cba2ffc9598ef0d3ed7}
+
+
+Purpose\+: get the list of vertex of the graph. 
+
+\hyperlink{class_cgraph_a543db6d2f65b8cba2ffc9598ef0d3ed7}{G\+R\+Aget\+\_\+vertices()} -\/ get the list of vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 364 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a8ae7eecc9e395ed8a6a893d23244d82a}{}\index{Cgraph@{Cgraph}!G\+R\+Ainvert\+\_\+all\+\_\+edges@{G\+R\+Ainvert\+\_\+all\+\_\+edges}}
+\index{G\+R\+Ainvert\+\_\+all\+\_\+edges@{G\+R\+Ainvert\+\_\+all\+\_\+edges}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Ainvert\+\_\+all\+\_\+edges}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} $\ast$ Cgraph\+::\+G\+R\+Ainvert\+\_\+all\+\_\+edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a8ae7eecc9e395ed8a6a893d23244d82a}
+
+
+Purpose\+: invert all edges in the graph. 
+
+\hyperlink{class_cgraph_a8ae7eecc9e395ed8a6a893d23244d82a}{G\+R\+Ainvert\+\_\+all\+\_\+edges()} -\/ invert all edges in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cgraph}{Cgraph} $\ast$ -\/ a new graph who is exactly the inverse of the original graph 
+\end{DoxyReturn}
+
+
+Definition at line 909 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a145aba32956baffe1ffd764d66eb3666}{}\index{Cgraph@{Cgraph}!G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity@{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity}}
+\index{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity@{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+::\+G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a145aba32956baffe1ffd764d66eb3666}
+
+
+Purpose\+: verify if a graph is only composed by community, a community is a set of vertex who can be split into strong connexe graph. for exemple \+: 
+
+void bool \hyperlink{class_cgraph_a145aba32956baffe1ffd764d66eb3666}{G\+R\+Ais\+\_\+graph\+\_\+only\+\_\+compose\+\_\+of\+\_\+comunity()} -\/ verify if a graph is only composed by community \begin{DoxyVerb}        -   a vertex alone is a community by itself
+        -   two vertices linked by an edge are a community
+        -   n vertices linked each one with each one by ((n-1)*n)/2 edges are a community
+
+     This function works well for any graph who are undirected (one edge link two vertices no more), and directed graph (one or more edge in any direction)
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+This function works well for any graph who are undirected (one edge link two vertices no more), and directed graph (one or more edge in any direction)
+
+Definition at line 1061 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ab25a1c2907cf1329916ecaa4a793016e}{}\index{Cgraph@{Cgraph}!G\+R\+Aorder\+\_\+by\+\_\+degree@{G\+R\+Aorder\+\_\+by\+\_\+degree}}
+\index{G\+R\+Aorder\+\_\+by\+\_\+degree@{G\+R\+Aorder\+\_\+by\+\_\+degree}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aorder\+\_\+by\+\_\+degree}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aorder\+\_\+by\+\_\+degree (
+\begin{DoxyParamCaption}
+\item[{char}]{c\+Option}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ab25a1c2907cf1329916ecaa4a793016e}
+
+
+Purpose\+: order the vertices of the graph by their degree. 
+
+void \hyperlink{class_cgraph_a5df435955743266a7b9d9f7fa8158184}{G\+R\+Aorder\+\_\+by\+\_\+degree()} -\/ order the vertices of the graph by their degree
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & c\+Option -\/ an option to chose the way to sort (increasing or decreasing)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+The sorting algorithm used is Quick Sort
+
+Definition at line 991 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a5df435955743266a7b9d9f7fa8158184}{}\index{Cgraph@{Cgraph}!G\+R\+Aorder\+\_\+by\+\_\+degree@{G\+R\+Aorder\+\_\+by\+\_\+degree}}
+\index{G\+R\+Aorder\+\_\+by\+\_\+degree@{G\+R\+Aorder\+\_\+by\+\_\+degree}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aorder\+\_\+by\+\_\+degree}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aorder\+\_\+by\+\_\+degree (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a5df435955743266a7b9d9f7fa8158184}
+
+
+Purpose\+: order the vertices of the graph by their degree (increasing sort) 
+
+void \hyperlink{class_cgraph_a5df435955743266a7b9d9f7fa8158184}{G\+R\+Aorder\+\_\+by\+\_\+degree()} -\/ order the vertices of the graph by their degree (increasing sort)
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 1043 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a8d76681a65dead8a7b9f04ee07b64a81}{}\index{Cgraph@{Cgraph}!G\+R\+Aorder\+\_\+by\+\_\+id@{G\+R\+Aorder\+\_\+by\+\_\+id}}
+\index{G\+R\+Aorder\+\_\+by\+\_\+id@{G\+R\+Aorder\+\_\+by\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aorder\+\_\+by\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aorder\+\_\+by\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a8d76681a65dead8a7b9f04ee07b64a81}
+
+
+Purpose\+: order the vertices of the graph by their id (increasing sort) 
+
+void \hyperlink{class_cgraph_a8d76681a65dead8a7b9f04ee07b64a81}{G\+R\+Aorder\+\_\+by\+\_\+id()} -\/ order the vertices of the graph by their id (increasing sort)
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 1047 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a43c280add746a2aee6d6c09435d8da00}{}\index{Cgraph@{Cgraph}!G\+R\+Aprint@{G\+R\+Aprint}}
+\index{G\+R\+Aprint@{G\+R\+Aprint}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aprint}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aprint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a43c280add746a2aee6d6c09435d8da00}
+
+
+Purpose\+: print to screen the graph. 
+
+void \hyperlink{class_cgraph_a43c280add746a2aee6d6c09435d8da00}{Cgraph\+::\+G\+R\+Aprint()} -\/ print to screen the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 663 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_ac0f9c28d05f4ce98521d2a859fd5f540}{}\index{Cgraph@{Cgraph}!G\+R\+Aprint@{G\+R\+Aprint}}
+\index{G\+R\+Aprint@{G\+R\+Aprint}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aprint}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aprint (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Option}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_ac0f9c28d05f4ce98521d2a859fd5f540}
+
+
+Purpose\+: print to screen the graph, you can use option to have different view. 
+
+void \hyperlink{class_cgraph_ac0f9c28d05f4ce98521d2a859fd5f540}{Cgraph\+::\+G\+R\+Aprint(char $\ast$ p\+Option)} -\/ print to screen the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$ p\+Option -\/ The string containing option to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Definition at line 686 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a0be43dbf3a34b9ed7161dd11d81ba9a3}{}\index{Cgraph@{Cgraph}!G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index}}
+\index{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a0be43dbf3a34b9ed7161dd11d81ba9a3}
+
+
+Purpose\+: remove an edge in the graph. 
+
+\hyperlink{class_cgraph_a0be43dbf3a34b9ed7161dd11d81ba9a3}{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+index(unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in)} -\/ remove an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the index (in the list of the graph) of the vertex in entry of the edge unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the index (in the list of the graph) of the vertex in exit of the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 749 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_af9de5664a44cdfbca02f33c9dc45c18e}{}\index{Cgraph@{Cgraph}!G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_af9de5664a44cdfbca02f33c9dc45c18e}
+
+
+Purpose\+: remove an edge in the graph. 
+
+\hyperlink{class_cgraph_af9de5664a44cdfbca02f33c9dc45c18e}{G\+R\+Aremove\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id(unsigned int ui\+Id\+\_\+vertex\+\_\+out, unsigned int ui\+Id\+\_\+vertex\+\_\+in)} -\/ remove an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the id of the vertex in entry of the edge unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the id of the vertex in exit of the edge\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 848 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a51f8ab13bb01858f05058fbcb9be0cef}{}\index{Cgraph@{Cgraph}!G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index@{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index}}
+\index{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index@{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} $\ast$ Cgraph\+::\+G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a51f8ab13bb01858f05058fbcb9be0cef}
+
+
+Purpose\+: remove a vertex of the graph. 
+
+\hyperlink{class_cgraph_a476c5213ccd669ce475c6a148aa27331}{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id(unsigned int ui\+Id\+\_\+vertex)} -\/ remove a vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Id\+\_\+vertex -\/ the id of the vertex to delete\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ a pointer to the \hyperlink{class_cvertex}{Cvertex} who has been removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if the index is out of the range of number of edge in the graph \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 529 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a476c5213ccd669ce475c6a148aa27331}{}\index{Cgraph@{Cgraph}!G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex} $\ast$ Cgraph\+::\+G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a476c5213ccd669ce475c6a148aa27331}
+
+
+Purpose\+: remove a vertex of the graph. 
+
+\hyperlink{class_cgraph_a51f8ab13bb01858f05058fbcb9be0cef}{G\+R\+Aremove\+\_\+vertex\+\_\+from\+\_\+index(unsigned int ui\+Index\+\_\+vertex)} -\/ remove a vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex -\/ the index (in the list of the graph) of the vertex to delete\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ a pointer to the \hyperlink{class_cvertex}{Cvertex} who has been removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if the index is out of the range of number of edge in the graph \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 590 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a399bfe930e7d73dff66fd9cc7321b8ba}{}\index{Cgraph@{Cgraph}!G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index}}
+\index{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index@{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Index\+\_\+vertex\+\_\+in, }
+\item[{unsigned int}]{ui\+Index\+\_\+new\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Index\+\_\+new\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a399bfe930e7d73dff66fd9cc7321b8ba}
+
+
+Purpose\+: update an edge in the graph. 
+
+\hyperlink{class_cgraph_a399bfe930e7d73dff66fd9cc7321b8ba}{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+index(unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+in)} -\/ update an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the index (in the list of the graph) of the vertex in entry of the edge to be remove unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the index (in the list of the graph) of the vertex in exit of the edge to be remove unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+out -\/ the index (in the list of the graph) of the vertex in entry of the edge to be add unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+in -\/ the index (in the list of the graph) of the vertex in exit of the edge to be add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 787 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_aad67e71da6fa688645f7c3dfbb156c8f}{}\index{Cgraph@{Cgraph}!G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Id\+\_\+vertex\+\_\+in, }
+\item[{unsigned int}]{ui\+Id\+\_\+new\+\_\+vertex\+\_\+out, }
+\item[{unsigned int}]{ui\+Id\+\_\+new\+\_\+vertex\+\_\+in}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_aad67e71da6fa688645f7c3dfbb156c8f}
+
+
+Purpose\+: update an edge in the graph. 
+
+\hyperlink{class_cgraph_aad67e71da6fa688645f7c3dfbb156c8f}{G\+R\+Aupdate\+\_\+edge\+\_\+from\+\_\+vertex\+\_\+id(unsigned int ui\+Index\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+vertex\+\_\+in, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+out, unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+in)} -\/ update an edge in the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex\+\_\+out -\/ the id of the vertex in entry of the edge to be remove unsigned int ui\+Index\+\_\+vertex\+\_\+in -\/ the id of the vertex in exit of the edge to be remove unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+out -\/ the id of the vertex in entry of the edge to be add unsigned int ui\+Index\+\_\+new\+\_\+vertex\+\_\+in -\/ the id of the vertex in exit of the edge to be add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an error if the value of the index are out of range of number of edge \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 871 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a7a57ff55a576088f502830da3234c685}{}\index{Cgraph@{Cgraph}!G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index@{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index}}
+\index{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index@{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Index\+\_\+vertex, }
+\item[{{\bf Cvertex} $\ast$}]{p\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a7a57ff55a576088f502830da3234c685}
+
+
+Purpose\+: update a vertex of the graph. 
+
+\hyperlink{class_cgraph_a7a57ff55a576088f502830da3234c685}{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+index(unsigned int ui\+Index\+\_\+vertex, Cvertex$\ast$ p\+Cvertex)} -\/ update a vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex -\/ the index (in the list in the graph) of the vertex to update Cvertex$\ast$ p\+Cvertex -\/ a pointer on the vertex to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ a pointer to the \hyperlink{class_cvertex}{Cvertex} who has been removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if the index is out of the range of number of edge in the graph Throw an exception if the p\+Cvertex is N\+U\+L\+L \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 612 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a902a9ad6561b0f4d5683a4778377461b}{}\index{Cgraph@{Cgraph}!G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}}
+\index{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id@{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}!Cgraph@{Cgraph}}
+\subsubsection[{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}void Cgraph\+::\+G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ui\+Id\+\_\+vertex, }
+\item[{{\bf Cvertex} $\ast$}]{p\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a902a9ad6561b0f4d5683a4778377461b}
+
+
+Purpose\+: update a vertex of the graph. 
+
+\hyperlink{class_cgraph_a902a9ad6561b0f4d5683a4778377461b}{G\+R\+Aupdate\+\_\+vertex\+\_\+from\+\_\+vertex\+\_\+id(unsigned int ui\+Id\+\_\+vertex, Cvertex$\ast$ p\+Vertex)} -\/ update a vertex of the graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int ui\+Index\+\_\+vertex -\/ the id of the vertex to update Cvertex$\ast$ p\+Cvertex -\/ a pointer on the vertex to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cvertex}{Cvertex} $\ast$ -\/ a pointer to the \hyperlink{class_cvertex}{Cvertex} who has been removed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Throw} & an exception if the index is out of the range of number of edge in the graph Throw an exception if the p\+Cvertex is N\+U\+L\+L \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 646 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a5e3465861c0ab322fb4dbf6d19ee3f28}{}\index{Cgraph@{Cgraph}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Cgraph@{Cgraph}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf Cgraph} \&}]{graph\+To\+Compare}
+\end{DoxyParamCaption}
+) const}\label{class_cgraph_a5e3465861c0ab322fb4dbf6d19ee3f28}
+
+
+Purpose\+: compare two graph. 
+
+operator!=(\+Cgraph \&graph\+To\+Compare) -\/ compare two graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cgraph}{Cgraph}} & \& graph\+To\+Compare -\/ the graph to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the two graphs are different 
+\end{DoxyReturn}
+
+
+Definition at line 1240 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a324c43b3a1df7ae07d2b135550544527}{}\index{Cgraph@{Cgraph}!operator=@{operator=}}
+\index{operator=@{operator=}!Cgraph@{Cgraph}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cgraph} \& Cgraph\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cgraph} \&}]{graph\+To\+Copy}
+\end{DoxyParamCaption}
+)}\label{class_cgraph_a324c43b3a1df7ae07d2b135550544527}
+
+
+Purpose\+: set the value of a graph with equal operator. 
+
+\hyperlink{class_cgraph_a324c43b3a1df7ae07d2b135550544527}{operator=(const Cgraph \&graph\+\_\+to\+\_\+copy)} -\/ set the value of a graph with equal operator
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_cgraph}{Cgraph} \& graph\+\_\+to\+\_\+copy -\/ the graph to copy (use to set the value)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_cgraph}{Cgraph} -\/ the copy of the graph 
+\end{DoxyReturn}
+
+
+Definition at line 1167 of file Cgraph.\+cpp.
+
+\hypertarget{class_cgraph_a1ee349de0e5cfd1ae0c4f72f4ad23900}{}\index{Cgraph@{Cgraph}!operator==@{operator==}}
+\index{operator==@{operator==}!Cgraph@{Cgraph}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Cgraph\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Cgraph} \&}]{graph\+To\+Compare}
+\end{DoxyParamCaption}
+) const}\label{class_cgraph_a1ee349de0e5cfd1ae0c4f72f4ad23900}
+
+
+Purpose\+: compare two graph. 
+
+operator==(\+Cgraph \&graph\+To\+Compare) -\/ compare two graph
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_cgraph}{Cgraph}} & \& graph\+To\+Compare -\/ the graph to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the two graph are equal 
+\end{DoxyReturn}
+
+
+Definition at line 1197 of file Cgraph.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_cgraph_aa0f349450a7e93bb80beea0d28b4fb0c}{}\index{Cgraph@{Cgraph}!pp\+G\+R\+Alist\+\_\+vertex@{pp\+G\+R\+Alist\+\_\+vertex}}
+\index{pp\+G\+R\+Alist\+\_\+vertex@{pp\+G\+R\+Alist\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{pp\+G\+R\+Alist\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cvertex}$\ast$$\ast$ Cgraph\+::pp\+G\+R\+Alist\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}\label{class_cgraph_aa0f349450a7e93bb80beea0d28b4fb0c}
+
+
+Definition at line 24 of file Cgraph.\+h.
+
+\hypertarget{class_cgraph_af86fdbce68779def5a1803c609567860}{}\index{Cgraph@{Cgraph}!ui\+G\+R\+Anb\+\_\+vertex@{ui\+G\+R\+Anb\+\_\+vertex}}
+\index{ui\+G\+R\+Anb\+\_\+vertex@{ui\+G\+R\+Anb\+\_\+vertex}!Cgraph@{Cgraph}}
+\subsubsection[{ui\+G\+R\+Anb\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Cgraph\+::ui\+G\+R\+Anb\+\_\+vertex\hspace{0.3cm}{\ttfamily [private]}}\label{class_cgraph_af86fdbce68779def5a1803c609567860}
+
+
+Definition at line 26 of file Cgraph.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cgraph_8h}{Cgraph.\+h}\item 
+Projet\+Cpp-\/\+Stable/\hyperlink{_cgraph_8cpp}{Cgraph.\+cpp}\end{DoxyCompactItemize}
