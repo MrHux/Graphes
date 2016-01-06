@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e595072fdc97916238d46273e812711"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a6e595072fdc97916238d46273e812711">GRAget_index_vertex</a> (<a class="el" href="class_cvertex.html">Cvertex</a> *pVertex)</td></tr>
 <tr class="memdesc:a6e595072fdc97916238d46273e812711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: get the index of the vertex pointed by pVertex in the list of the graph.  <a href="#a6e595072fdc97916238d46273e812711">More...</a><br /></td></tr>
 <tr class="separator:a6e595072fdc97916238d46273e812711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca872915fd8745ae14ba41afbb0dec0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cvertex.html">Cvertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#aca872915fd8745ae14ba41afbb0dec0a">GRAget_vertex</a> (unsigned int uiId_vertex)</td></tr>
+<tr class="memitem:aca872915fd8745ae14ba41afbb0dec0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cvertex.html">Cvertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#aca872915fd8745ae14ba41afbb0dec0a">GRAget_vertex</a> (unsigned int uiId_vertex)  throw (Cexception)</td></tr>
 <tr class="memdesc:aca872915fd8745ae14ba41afbb0dec0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: get the vertex at the index in param.  <a href="#aca872915fd8745ae14ba41afbb0dec0a">More...</a><br /></td></tr>
 <tr class="separator:aca872915fd8745ae14ba41afbb0dec0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773062af5c90eb8b3caf083265b1fefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cvertex.html">Cvertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a773062af5c90eb8b3caf083265b1fefe">GRAget_vertex_from_vertex_id</a> (unsigned int uiVertex_id)</td></tr>
@@ -142,12 +142,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac23521c4babdef352f7a88321032a7ec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#ac23521c4babdef352f7a88321032a7ec">GRAadd_vertex</a> (<a class="el" href="class_cvertex.html">Cvertex</a> *pVertex)</td></tr>
 <tr class="memdesc:ac23521c4babdef352f7a88321032a7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: add a vertex to the graph (if the vertex is already there it's not added, but it's position is returned)  <a href="#ac23521c4babdef352f7a88321032a7ec">More...</a><br /></td></tr>
 <tr class="separator:ac23521c4babdef352f7a88321032a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476c5213ccd669ce475c6a148aa27331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cvertex.html">Cvertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a476c5213ccd669ce475c6a148aa27331">GRAremove_vertex_from_vertex_id</a> (unsigned int uiId_vertex)</td></tr>
-<tr class="memdesc:a476c5213ccd669ce475c6a148aa27331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: remove a vertex of the graph.  <a href="#a476c5213ccd669ce475c6a148aa27331">More...</a><br /></td></tr>
-<tr class="separator:a476c5213ccd669ce475c6a148aa27331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f8ab13bb01858f05058fbcb9be0cef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cvertex.html">Cvertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a51f8ab13bb01858f05058fbcb9be0cef">GRAremove_vertex_from_index</a> (unsigned int uiIndex_vertex)</td></tr>
-<tr class="memdesc:a51f8ab13bb01858f05058fbcb9be0cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: remove a vertex of the graph.  <a href="#a51f8ab13bb01858f05058fbcb9be0cef">More...</a><br /></td></tr>
-<tr class="separator:a51f8ab13bb01858f05058fbcb9be0cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec274e04f17384410effb7b802918e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a0ec274e04f17384410effb7b802918e6">GRAremove_vertex_from_vertex_id</a> (unsigned int uiId_vertex)</td></tr>
+<tr class="memdesc:a0ec274e04f17384410effb7b802918e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: remove a vertex of the graph.  <a href="#a0ec274e04f17384410effb7b802918e6">More...</a><br /></td></tr>
+<tr class="separator:a0ec274e04f17384410effb7b802918e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9086d7228eadb2f30b116466957c9a79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a9086d7228eadb2f30b116466957c9a79">GRAremove_vertex_from_index</a> (unsigned int uiIndex_vertex)  throw (Cexception)</td></tr>
+<tr class="memdesc:a9086d7228eadb2f30b116466957c9a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: remove a vertex of the graph.  <a href="#a9086d7228eadb2f30b116466957c9a79">More...</a><br /></td></tr>
+<tr class="separator:a9086d7228eadb2f30b116466957c9a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a57ff55a576088f502830da3234c685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a7a57ff55a576088f502830da3234c685">GRAupdate_vertex_from_index</a> (unsigned int uiIndex_vertex, <a class="el" href="class_cvertex.html">Cvertex</a> *pVertex)</td></tr>
 <tr class="memdesc:a7a57ff55a576088f502830da3234c685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: update a vertex of the graph.  <a href="#a7a57ff55a576088f502830da3234c685">More...</a><br /></td></tr>
 <tr class="separator:a7a57ff55a576088f502830da3234c685"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0f9c28d05f4ce98521d2a859fd5f540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#ac0f9c28d05f4ce98521d2a859fd5f540">GRAprint</a> (char *pOption)</td></tr>
 <tr class="memdesc:ac0f9c28d05f4ce98521d2a859fd5f540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: print to screen the graph, you can use option to have different view.  <a href="#ac0f9c28d05f4ce98521d2a859fd5f540">More...</a><br /></td></tr>
 <tr class="separator:ac0f9c28d05f4ce98521d2a859fd5f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0be43dbf3a34b9ed7161dd11d81ba9a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a0be43dbf3a34b9ed7161dd11d81ba9a3">GRAremove_edge_from_index</a> (unsigned int uiIndex_vertex_out, unsigned int uiIndex_vertex_in)</td></tr>
+<tr class="memitem:a0be43dbf3a34b9ed7161dd11d81ba9a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a0be43dbf3a34b9ed7161dd11d81ba9a3">GRAremove_edge_from_index</a> (unsigned int uiIndex_vertex_out, unsigned int uiIndex_vertex_in)  throw (Cexception)</td></tr>
 <tr class="memdesc:a0be43dbf3a34b9ed7161dd11d81ba9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purpose: remove an edge in the graph.  <a href="#a0be43dbf3a34b9ed7161dd11d81ba9a3">More...</a><br /></td></tr>
 <tr class="separator:a0be43dbf3a34b9ed7161dd11d81ba9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399bfe930e7d73dff66fd9cc7321b8ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cgraph.html#a399bfe930e7d73dff66fd9cc7321b8ba">GRAupdate_edge_from_index</a> (unsigned int uiIndex_vertex_out, unsigned int uiIndex_vertex_in, unsigned int uiIndex_new_vertex_out, unsigned int uiIndex_new_vertex_in)</td></tr>
@@ -287,7 +287,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00041">41</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00040">40</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00073">73</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00072">72</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00226">226</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00200">200</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00258">258</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00232">232</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00317">317</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00293">293</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00810">810</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00762">762</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00892">892</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00845">845</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +545,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int - the position of the vertex </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00486">486</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00455">455</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int - the number of edge of the successors </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01119">1119</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01074">1074</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +601,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00938">938</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00892">892</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00965">965</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00919">919</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int - if the vertex is in the graph return his own index in the list of vertex, otherwise return the maximun number who can be set in an unsigned int </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00383">383</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00355">355</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +685,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned int - if the vertex is in the graph return his own index in the list of vertex, otherwise return the maximun number who can be set in an unsigned int </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00405">405</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00377">377</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -703,7 +703,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Not used ! </p>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01136">1136</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01090">1090</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +730,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00460">460</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00430">430</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -757,7 +757,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00346">346</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00321">321</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -771,6 +771,12 @@ Private Attributes</h2></td></tr>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>uiId_vertex</em></td><td>)</td>
           <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2"><a class="el" href="class_cexception.html">Cexception</a></td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -791,7 +797,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00430">430</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00402">402</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +825,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_cvertex.html" title="Cvertex Class. ">Cvertex</a> * - the vertex </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00455">455</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00426">426</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -846,7 +852,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00364">364</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00338">338</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -873,7 +879,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_cgraph.html" title="Cgraph Class. ">Cgraph</a> * - a new graph who is exactly the inverse of the original graph </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00909">909</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00862">862</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -905,7 +911,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <p>This function works well for any graph who are undirected (one edge link two vertices no more), and directed graph (one or more edge in any direction)</p>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01061">1061</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01011">1011</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -934,7 +940,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 <p>The sorting algorithm used is Quick Sort</p>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00991">991</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00945">945</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -962,7 +968,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01043">1043</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00994">994</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -989,7 +995,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01047">1047</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00998">998</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1022,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00663">663</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00621">621</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1044,7 +1050,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00686">686</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00642">642</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1069,6 +1075,12 @@ Private Attributes</h2></td></tr>
           <td>)</td>
           <td></td><td></td>
         </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2"><a class="el" href="class_cexception.html">Cexception</a></td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
+        </tr>
       </table>
 </div><div class="memdoc">
 
@@ -1088,7 +1100,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00749">749</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00702">702</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1132,26 +1144,32 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00848">848</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00801">801</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a51f8ab13bb01858f05058fbcb9be0cef"></a>
+<a class="anchor" id="a9086d7228eadb2f30b116466957c9a79"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_cvertex.html">Cvertex</a> * Cgraph::GRAremove_vertex_from_index </td>
+          <td class="memname">void Cgraph::GRAremove_vertex_from_index </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>uiIndex_vertex</em></td><td>)</td>
           <td></td>
         </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2"><a class="el" href="class_cexception.html">Cexception</a></td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
+        </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Purpose: remove a vertex of the graph. </p>
-<p><a class="el" href="class_cgraph.html#a476c5213ccd669ce475c6a148aa27331" title="Purpose: remove a vertex of the graph. ">GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex)</a> - remove a vertex of the graph</p>
+<p><a class="el" href="class_cgraph.html#a0ec274e04f17384410effb7b802918e6" title="Purpose: remove a vertex of the graph. ">GRAremove_vertex_from_vertex_id(unsigned int uiId_vertex)</a> - remove a vertex of the graph</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unsigned</td><td>int uiId_vertex - the id of the vertex to delete</td></tr>
@@ -1166,16 +1184,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00529">529</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00493">493</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a476c5213ccd669ce475c6a148aa27331"></a>
+<a class="anchor" id="a0ec274e04f17384410effb7b802918e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_cvertex.html">Cvertex</a> * Cgraph::GRAremove_vertex_from_vertex_id </td>
+          <td class="memname">void Cgraph::GRAremove_vertex_from_vertex_id </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>uiId_vertex</em></td><td>)</td>
@@ -1185,7 +1203,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Purpose: remove a vertex of the graph. </p>
-<p><a class="el" href="class_cgraph.html#a51f8ab13bb01858f05058fbcb9be0cef" title="Purpose: remove a vertex of the graph. ">GRAremove_vertex_from_index(unsigned int uiIndex_vertex)</a> - remove a vertex of the graph</p>
+<p><a class="el" href="class_cgraph.html#a9086d7228eadb2f30b116466957c9a79" title="Purpose: remove a vertex of the graph. ">GRAremove_vertex_from_index(unsigned int uiIndex_vertex)</a> - remove a vertex of the graph</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unsigned</td><td>int uiIndex_vertex - the index (in the list of the graph) of the vertex to delete</td></tr>
@@ -1200,7 +1218,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00590">590</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00550">550</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1274,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00787">787</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00740">740</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1330,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00871">871</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00824">824</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1374,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00612">612</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00572">572</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1418,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00646">646</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l00604">604</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1446,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true - if the two graphs are different </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01240">1240</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01189">1189</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1474,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_cgraph.html" title="Cgraph Class. ">Cgraph</a> - the copy of the graph </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01167">1167</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01121">1121</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1484,7 +1502,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true - if the two graph are equal </dd></dl>
 
-<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01197">1197</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_cgraph_8cpp_source.html#l01150">1150</a> of file <a class="el" href="_cgraph_8cpp_source.html">Cgraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -1540,7 +1558,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 27 2015 12:31:06 for Projet_Stable by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 6 2016 21:30:50 for Projet_Stable by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
