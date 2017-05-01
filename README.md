@@ -1,4 +1,4 @@
-A c++ graphe library build on linux
+A c++ graph library build on linux
 
 This is an oriented-object library writted in C++ to use graph.
 Some simple function enable user to create graph and import or export graph from file.
@@ -17,4 +17,6 @@ In our representation of a graph, a Cgraph contain a table of Cvertex. A Cvertex
 
 A main.cpp file show some exemple to how to use the library, unit test are present inside this project files. They are specified with the "UNIT" part of the file name.
 
-Currently we are working to add some advenced feature to search maximum independent sets in a graph the most quickly.
+---------------------------------------------------------------------------------------------------------------------
+
+Some new features has been added to search maximum independent sets in a graph.
