@@ -17,6 +17,6 @@ In our representation of a graph, a Cgraph contain a table of Cvertex. A Cvertex
 
 A main.cpp file show some exemple to how to use the library, unit test are present inside this project files. They are specified with the "UNIT" part of the file name.
 
----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
-Some new features has been added to search maximum independent sets in a graph.
+New features has been added to search maximum independent sets in a graph.
